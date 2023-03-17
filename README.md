@@ -21,7 +21,7 @@
 - [Contributing](#Contributing)
 - [License](#License)
 ## Background and Flowchart<a name="BackgroundandFlowchart"></a>
-![The Integrated Data Curation pipeline designed to enable researchers to extract high quality data from electronic health records (EHRs) for RWE.](https://myoctocat.com/assets/images/base-octocat.svg)
+![The Integrated Data Curation pipeline designed to enable researchers to extract high quality data from electronic health records (EHRs) for RWE.](https://github.com/QingyiZengumn/Harnessing-electronic-health-records-for-real-world-evidence/blob/main/Flowchart.png)
 
 
 ## Method <a name="Method"></a>

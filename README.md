@@ -36,29 +36,33 @@
     </thead>
     <tbody>
         <tr>
-            <td rowspan=3>Identify medical concepts from RCT documents
+            <td rowspan=4>Identify medical concepts from RCT documents
 </td>
             <td>Metamap</td>
             <td><a href="https://lhncbc.nlm.nih.gov/ii/tools/MetaMap.html">Tools: MetaMap</a></td>
             <td><a href="https://lhncbc.nlm.nih.gov/ii/information/Papers/metamap06.pdf">Mapping Text to the UMLS Metathesaurus</a></td>
-        
         </tr>
         <tr>
-            <td>TestType2</td>
-            <td>73</td>
+            <td>HPO</td>
+         <td><a href="https://hpo.jax.org/app/">The Human Phenotype Ontology</a></td>
+            <td><a href="https://pubmed.ncbi.nlm.nih.gov/33264411/">
+The Human Phenotype Ontology in 2021</a></td>
         </tr>
         <tr>
-            <td>Experiment 2</td>
-            <td>TestType1</td>
-            <td>93</td>
+            <td>NILE</td>
+            <td><a href="https://celehs.github.io/NILE.html">Narrative Information Linear Extraction (NILE)</a></td>
+            <td><a href="https://arxiv.org/abs/1311.6063">
+NILE: Fast Natural Language Processing for Electronic Health Records</a></td>
         </tr>
         <tr>
-            <td>Experiment 3</td>
-            <td>TestType2</td>
-            <td>79</td>
+            <td>cTAKES</td>
+            <td><a href="https://ctakes.apache.org/">Apache cTAKES</a></td>
+            <td><a href="https://pubmed.ncbi.nlm.nih.gov/34042745/">
+Entity Extraction for Clinical Notes, a Comparison Between MetaMap and Amazon Comprehend Medical</a></td>
         </tr>
     </tbody>
 </table>
+
 #### Concept Matching <a name="ConceptMatching"></a>
 
 ### Module two: Cohort Construction

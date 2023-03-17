@@ -25,7 +25,42 @@
 
 ### Module one: Creating Meta-Data for Harmonization<a name="Moduleone"></a>
 #### Concept Identification <a name="ConceptIden"></a>
+<table>
+    <thead>
+        <tr>
+            <th>Use</th>
+            <th>Methods</th>
+            <th>Links</th>
+             <th>References</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan=3>Identify medical concepts from RCT documents
+</td>
+            <td>Metamap</td>
+            <td><a href="https://lhncbc.nlm.nih.gov/ii/tools/MetaMap.html">Tools: MetaMap</a></td>
+            <td><a href="https://lhncbc.nlm.nih.gov/ii/information/Papers/metamap06.pdf">Mapping Text to the UMLS Metathesaurus</a></td>
+        
+        </tr>
+        <tr>
+            <td>TestType2</td>
+            <td>73</td>
+        </tr>
+        <tr>
+            <td>Experiment 2</td>
+            <td>TestType1</td>
+            <td>93</td>
+        </tr>
+        <tr>
+            <td>Experiment 3</td>
+            <td>TestType2</td>
+            <td>79</td>
+        </tr>
+    </tbody>
+</table>
 #### Concept Matching <a name="ConceptMatching"></a>
+
 ### Module two: Cohort Construction
 <a name="Moduletwo"></a>
 #### Data Mart<a name="Datamart"></a>

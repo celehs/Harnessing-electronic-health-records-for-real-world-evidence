@@ -1,6 +1,6 @@
 #  Harnessing Electronic Health Records for Real World Evidence
 ## Table of Contents
-- [Background](#Background)
+- [Background and Flowchart](#Background and Flowchart)
 - [Method](#Method)
     - [Module one: Creating Meta-Data for Harmonization](#Moduleone)
       + [Concept Identification](#ConceptIden)
@@ -20,7 +20,7 @@
 - [Method](#Method)
 - [Contributing](#Contributing)
 - [License](#License)
-## Background <a name="Background"></a>
+## Background and Flowchart<a name="Background"></a>
 ## Method <a name="Method"></a>
 
 ### Module one: Creating Meta-Data for Harmonization<a name="Moduleone"></a>

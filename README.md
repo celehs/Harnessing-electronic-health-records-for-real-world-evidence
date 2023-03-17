@@ -69,6 +69,44 @@ Entity Extraction for Clinical Notes, a Comparison Between MetaMap and Amazon Co
 </table>
 
 #### Concept Matching <a name="ConceptMatching"></a>
+<table>
+    <thead>
+        <tr>
+            <th>Use</th>
+            <th>Methods</th>
+            <th>Links</th>
+             <th>References</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan=4>Grouping of structured EHR</td>
+            <td>PheWAS catalog</td>
+            <td><a href="https://phewascatalog.org/">Phenome Wide Association Studies</a></td>
+            <td><a href="https://pubmed.ncbi.nlm.nih.gov/20335276/">PheWAS: demonstrating the feasibility of a phenome-wide scan to discover gene-disease associations</a></td>
+        </tr>
+        
+        <tr>
+            <td>CCS</td>
+         <td><a href="https://hcup-us.ahrq.gov/toolssoftware/ccs/ccs.jsp#download">CLINICAL CLASSIFICATIONS SOFTWARE (CCS) FOR ICD-9-CM/a></td>
+            <td><a href="https://pubmed.ncbi.nlm.nih.gov/33264411/">
+The Human Phenotype Ontology in 2021</a></td>
+        </tr>
+        <tr>
+            <td>NILE</td>
+            <td><a href="https://celehs.github.io/NILE.html">Narrative Information Linear Extraction (NILE)</a></td>
+            <td><a href="https://arxiv.org/abs/1311.6063">
+NILE: Fast Natural Language Processing for Electronic Health Records</a></td>
+        </tr>
+        <tr>
+            <td>cTAKES</td>
+            <td><a href="https://ctakes.apache.org/">Apache cTAKES</a></td>
+            <td><a href="https://pubmed.ncbi.nlm.nih.gov/34042745/">
+Entity Extraction for Clinical Notes, a Comparison Between MetaMap and Amazon Comprehend Medical</a></td>
+        </tr>
+    </tbody>
+</table>
+
 
 ### Module two: Cohort Construction
 <a name="Moduletwo"></a>

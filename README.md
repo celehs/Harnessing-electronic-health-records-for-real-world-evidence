@@ -112,8 +112,9 @@ LOINC, a universal standard for identifying laboratory observations: a 5-year up
             <td rowspan=4>Expansion and selection of relevant features using knowledge source or cooccurrence
 </td>
             <td>Export curation</td>
-            <td><a href="https://phewascatalog.org/">Phenome Wide Association Studies</a></td>
-            <td><a href="https://pubmed.ncbi.nlm.nih.gov/20335276/">PheWAS: demonstrating the feasibility of a phenome-wide scan to discover gene-disease associations</a></td>
+            <td><a href="https://www.nlm.nih.gov/research/umls/index.html">UMLS</a>, <a href="https://www.wikidata.org/wiki/Wikidata:Database_download">Wikidata</a> </td>
+            <td><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC308795/">The Unified Medical Language System (UMLS): integrating biomedical terminology, <a href="https://en.wikipedia.org/wiki/Freebase_(database)">Freebase (database)
+</a></td>
         </tr>
         <tr>
             <td>CCS, CPT-4/HCPCS, ICD-9-PCS, ICD-10-PCS</td>

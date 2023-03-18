@@ -21,7 +21,7 @@ This page provides the resources and tools mentioned from the entire available b
 - [Contributing](#Contributing)
 - [License](#License)
 ## Background and Flowchart<a name="BackgroundandFlowchart"></a>
-In this study, we outlined an integrated pipeline to improve the resolution of EHR data for precision medicine research, bridging the gap between technological innovation and application to clinical studies. We summarize the technologies and methods available for data curation and causal modelling that will enable researchers to perform robust analysis with high quality data from EHRs for RWE generation. Our pipeline has 4 modules: 1) creating meta-data for harmonization, 2) cohort construction, 3) variable curation, and 4) validation and robust modeling (Figure 1). The lists of methods and resources integrated into the pipeline are listed in the following sections, respectively. The pipeline contributes simultaneously to the creation of digital twins.
+In this study, we outline an integrated pipeline to improve the resolution of EHR data for precision medicine research, bridging the gap between technological innovation and application to clinical studies. We summarize the technologies and methods available for data curation and causal modelling that will enable researchers to perform robust analysis with high quality data from EHRs for RWE generation. Our pipeline has 4 modules: 1) creating meta-data for harmonization, 2) cohort construction, 3) variable curation, and 4) validation and robust modeling (Figure 1). The lists of methods and resources integrated into the pipeline are listed for each module of the pipeline, respectively. The pipeline contributes simultaneously to the creation of digital twins.
 
 ![The Integrated Data Curation pipeline designed to enable researchers to extract high quality data from electronic health records (EHRs) for RWE.](https://github.com/QingyiZengumn/Harnessing-electronic-health-records-for-real-world-evidence/blob/main/Flowchart.png)
 <a name="myfootnote1">**Figure 1**</a>:The Integrated Data Curation pipeline designed to enable researchers to extract high quality data from electronic health records (EHRs) for RWE.
@@ -31,7 +31,9 @@ In this study, we outlined an integrated pipeline to improve the resolution of E
 ## Method <a name="Method"></a>
 
 ### Module one: Creating Meta-Data for Harmonization<a name="Moduleone"></a>
+The first step in our pipeline is to perform data harmonization by mapping clinical variables of interest to relevant sources of data within EHRs. To make this mapping process more efficient and transparent, we propose an automated method using NLP for data harmonization. This approach can help streamline the process and improve accuracy in identifying the clinical relevant concepts.
 #### Concept Identification <a name="ConceptIden"></a>
+Identify the medical concepts associated with the clinical variables from the RCT documents using existing clinical NLP software.
 <table>
     <thead>
         <tr>
@@ -71,6 +73,7 @@ Entity Extraction for Clinical Notes, a Comparison Between MetaMap and Amazon Co
 </table>
 
 #### Concept Matching <a name="ConceptMatching"></a>
+Match the identified medical concepts to both structured and unstructured EHR data elements.
 <table>
     <thead>
         <tr>
@@ -135,7 +138,12 @@ RxNorm: Prescription for Electronic Drug Information Exchange</a></td>
 
 
 ### Module two: Cohort Construction <a name="Moduletwo"></a>
+The construction of the study cohort for RWE involves identifying the patients with the condition/disease of interest, their time window for the indication and whether they underwent the interventions in the RCT. EHR data contain a large amount of data of which a subset is relevant to the study.   To avoid involving unnecessary personal health identifiers into the data for analysist, we recommend a 3-phase cohort construction strategy that gradually extracts the minimally necessary data from the EHR, starting from an inclusive data mart to the disease cohort and then to the treatment arms. 
+
+
 #### Data Mart<a name="Datamart"></a>
+The data mart is designed to include all patients with any indication of the disease or condition of interest. To achieve the desired inclusiveness, researchers should summarize a broad list of EHR variables with high sensitivity and construct the data mart to capture patients with at least one occurrence of the listed variables.
+
 <table>
     <thead>
         <tr>
@@ -160,6 +168,8 @@ The Human Phenotype Ontology in 2021</a></td>
 </table>    
 
 #### Diease Corhort<a name="Diseasecorhort"></a>
+After the data mart is created, the next step is to identify the disease cohort containing the subset of patients within the data mart who have the disease of interest.Commonly used phenotyping tools can be roughly classified as either rule-based or machine-learning based. Machine learning approaches can be further classified as either weakly supervised, semi-supervised, or supervised based on the availability of gold-standard labels for model training.
+
 <table>
     <thead>
         <tr>
@@ -180,6 +190,7 @@ The Human Phenotype Ontology in 2021</a></td>
 </table>   
         
 #### Treatment Arms and Timing<a name="Treatment&arm"></a>
+With a given disease cohort, one may proceed to identify patients who received the relevant treatments, which are typically medications or procedures.
 <table>
     <thead>
         <tr>

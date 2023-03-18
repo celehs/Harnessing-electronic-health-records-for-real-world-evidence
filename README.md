@@ -95,19 +95,18 @@ Entity Extraction for Clinical Notes, a Comparison Between MetaMap and Amazon Co
              </td>
               <td><a href="https://hcup-us.ahrq.gov/reports/natstats/his95/clinclas.htm">
 Clinical Classifications for Health Policy Research: Version 2 : Software and User’s Guide. (U.S. Department of Health and Human Services, Public Health Service, Agency for Health Care Policy and Research</a></td>
-        </tr>
-        
+        </tr>   
         <tr>
-            <td>NILE</td>
-            <td><a href="https://celehs.github.io/NILE.html">Narrative Information Linear Extraction (NILE)</a></td>
-            <td><a href="https://arxiv.org/abs/1311.6063">
-NILE: Fast Natural Language Processing for Electronic Health Records</a></td>
+            <td>RxNorm</td>
+            <td><a href="https://www.nlm.nih.gov/research/umls/rxnorm/docs/rxnormfiles.html">RxNorm Files</a></td>
+            <td><a href="https://www.nlm.nih.gov/research/umls/rxnorm/RxNorm.pdf">
+RxNorm: Prescription for Electronic Drug Information Exchange</a></td>
         </tr>
         <tr>
-            <td>cTAKES</td>
-            <td><a href="https://ctakes.apache.org/">Apache cTAKES</a></td>
-            <td><a href="https://pubmed.ncbi.nlm.nih.gov/34042745/">
-Entity Extraction for Clinical Notes, a Comparison Between MetaMap and Amazon Comprehend Medical</a></td>
+            <td>Lonic</td>
+            <td><a href="https://loinc.org/downloads/">Download Lonic</a></td>
+            <td><a href="https://pubmed.ncbi.nlm.nih.gov/12651816/">
+LOINC, a universal standard for identifying laboratory observations: a 5-year update</a></td>
         </tr>
     </tbody>
 </table>

@@ -1,4 +1,5 @@
 #  Harnessing Electronic Health Records for Real World Evidence
+This page provides the resources and tools mentioned from the entire available biomedical scientific literature, [Harnessing Electronic Health Records for Real World Evidence.](https://arxiv.org/abs/2211.16609)
 ## Table of Contents
 - [Background and Flowchart](#BackgroundandFlowchart)
 - [Method](#Method)
@@ -17,10 +18,11 @@
       + [Robust analysis for imperfect data](#Imperfect) 
       + [Robust adjustment for confounding](#Adconfound) 
       + [Creation of Digital Twins from RWD](#Digitaltwins) 
-- [Method](#Method)
 - [Contributing](#Contributing)
 - [License](#License)
 ## Background and Flowchart<a name="BackgroundandFlowchart"></a>
+In this study, we outlined an integrated pipeline to improve the resolution of EHR data for precision medicine research, bridging the gap between technological innovation and application to clinical studies. We summarize the technologies and methods available for data curation and causal modelling that will enable researchers to perform robust analysis with high quality data from EHRs for RWE generation. Our pipeline has 4 modules: 1) creating meta-data for harmonization, 2) cohort construction, 3) variable curation, and 4) validation and robust modeling (Figure 1). The lists of methods and resources integrated into the pipeline are listed in the following sections, respectively. The pipeline contributes simultaneously to the creation of digital twins.
+
 ![The Integrated Data Curation pipeline designed to enable researchers to extract high quality data from electronic health records (EHRs) for RWE.](https://github.com/QingyiZengumn/Harnessing-electronic-health-records-for-real-world-evidence/blob/main/Flowchart.png)
 <a name="myfootnote1">**Figure 1**</a>:The Integrated Data Curation pipeline designed to enable researchers to extract high quality data from electronic health records (EHRs) for RWE.
 

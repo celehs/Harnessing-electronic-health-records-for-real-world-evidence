@@ -187,9 +187,26 @@ After the data mart is created, the next step is to identify the disease cohort 
             <td><a href="https://phewascatalog.org/">Phenome Wide Association Studies</a>,<a href="https://github.com/clinicalml/anchorExplorer
 ">Anchorexplorer</a>,<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5070523/
 ">Express</a>,<a href="https://github.com/OHDSI/Aphrodite">Aphrodite</a>,<a href="https://celehs.github.io/PheNorm/">PheNorm</a>, <a href="https://github.com/celehs/MAP">MAP</a>, <a href="https://github.com/celehs/sureLDA">sureLDA</a>, <a href="https://github.com/ModelOriented/SAFE">SAFE</a>, <a href="https://github.com/ModelOriented/SAFE">SAFE</a>,
-            <a href="https://github.com/celehs/PheCAP">PheCAP </a></td>
-<td><a href="https://pubmed.ncbi.nlm.nih.gov/33264411/">
-The Human Phenotype Ontology in 2021</a></td>       
+            <a href="https://pubmed.ncbi.nlm.nih.gov/27107443/![image](https://user-images.githubusercontent.com/128131210/226155858-3c6eb32b-4348-4440-85ac-871a354064d3.png)
+">PheCAP </a></td>
+<td><a href="https://pubmed.ncbi.nlm.nih.gov/27107443/">
+Electronic medical record phenotyping using the anchor and learn framework</a>, <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5070523/">
+Learning statistical models of phenotypes using noisy labeled training data</a>, <a href="https://pubmed.ncbi.nlm.nih.gov/28815104/">
+Electronic medical record phenotyping using the anchor and learn framework</a>, <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6251688/">
+Enabling phenotypic big data with PheNorm</a>,
+<a href="https://pubmed.ncbi.nlm.nih.gov/31613361">
+High-throughput multimodal automated phenotyping (MAP) with application to PheWAS
+</a>, 
+<a href="https://pubmed.ncbi.nlm.nih.gov/25929596/">
+Toward high-throughput phenotyping: unbiased automated feature extraction and selection from knowledge sources</a>, <a href="https://pubmed.ncbi.nlm.nih.gov/27632993
+">
+Surrogate-assisted feature extraction for high-throughput phenotyping
+</a>, <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6371355/">
+Phenotyping through Semi-Supervised Tensor Factorization (PSST)
+</a>, <a href="https://pubmed.ncbi.nlm.nih.gov/31722396/">
+A maximum likelihood approach to electronic health record phenotyping using positive and unlabeled patients.
+</a>, <a href="https://pubmed.ncbi.nlm.nih.gov/31748751">
+High-throughput phenotyping with electronic medical record data using a common semi-supervised approach (PheCAP)</a> </td>       
     <tbody>
 </table>      
         

@@ -123,13 +123,16 @@ LOINC, a universal standard for identifying laboratory observations: a 5-year up
         <tr>
             <td>Knowledge sources</td>
          <td> <a href="https://bio.nlplab.org/pdf/pyysalo13literature.pdf">Distributional Semantics Resources </a>, <a href="https://pubmed.ncbi.nlm.nih.gov/"> PubMed </a>,  <a href="https://www.merckmanuals.com/">MerkMannual
-</a>,  <a href="https://www.medscape.com/">Medscape</a></td> <td><a href="https://pubmed.ncbi.nlm.nih.gov/25160253/">Exploring the application of deep learning techniques on medical text corpora</a></td>
+</a>,  <a href="https://www.medscape.com/">Medscape</a></td> <td><a href="https://pubmed.ncbi.nlm.nih.gov/25160253/">Exploring the application of deep learning techniques on medical text corpora</a>,<a href="https://pubmed.ncbi.nlm.nih.gov/25160253/">Exploring the application of deep learning techniques on medical text corpora</a> </td>
         </tr>   
         <tr>
             <td>EHR data</td>
-            <td><a href="https://www.nlm.nih.gov/research/umls/rxnorm/docs/rxnormfiles.html">27,40-44</a></td>
-            <td><a href="https://www.nlm.nih.gov/research/umls/rxnorm/RxNorm.pdf">
-RxNorm: Prescription for Electronic Drug Information Exchange</a></td>
+            <td><a href="https://www.data.va.gov/dataset/Corporate-Data-Warehouse-CDW-/ftpi-epf7?category=dataset&view_name=Corporate-Data-Warehouse-CDW-">VA Corporate Data Warehouse (CDW)</a>,<a href="https://www.massgeneralbrigham.org/en
+">Mass General Brigham (MGB)</a> </td>
+            <td><a href="https://www.medrxiv.org/content/10.1101/2021.03.13.21253486v1
+">
+Clinical Knowledge Extraction via Sparse Embedding Regression (KESER) with Multi-Center Large Scale Electronic Health Record Data. 
+</a></td>
         </tr>
     </tbody>
 </table>

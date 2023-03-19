@@ -264,7 +264,8 @@ RCT emulation with EHR data generally requires three categories of data elements
 </table>   
         
 #### Extraction of Baseline Variables <a name="BaselineVariables"></a>
-        <table>
+        
+<table>
     <thead>
         <tr>
             <th>Use</th>
@@ -284,7 +285,8 @@ RCT emulation with EHR data generally requires three categories of data elements
 </table>   
         
 #### Extraction of Baseline Endpoints <a name="BaselineEndpoints"></a>
-        <table>
+        
+<table>
     <thead>
         <tr>
             <th>Use</th>

@@ -184,10 +184,14 @@ After the data mart is created, the next step is to identify the disease cohort 
             <td rowspan=11>Identify patients with disease of interest through phenotyping</td>
             <td>Unsupervised: anchor and learn, XPRESS53, APHRODITE, PheNorm, MAP and sureLDA; Semi-supervised: AFEP, SAFE, PSST, likelihood approach, and PheCAP
  </td>
-            <td><a href="https://phewascatalog.org/">Phenome Wide Association Studies</a></td>
-            <td><a href="https://pubmed.ncbi.nlm.nih.gov/20335276/">PheWAS: demonstrating the feasibility of a phenome-wide scan to discover gene-disease associations</a></td>
+            <td><a href="https://phewascatalog.org/">Phenome Wide Association Studies</a>,<a href="https://github.com/clinicalml/anchorExplorer
+">Anchorexplorer</a>,<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5070523/
+">Express</a>,<a href="https://github.com/OHDSI/Aphrodite">Aphrodite</a>,<a href="https://celehs.github.io/PheNorm/">PheNorm</a>, <a href="https://github.com/celehs/MAP">MAP</a>, <a href="https://github.com/celehs/sureLDA">sureLDA</a>, <a href="https://github.com/ModelOriented/SAFE">SAFE</a>, <a href="https://github.com/ModelOriented/SAFE">SAFE</a>,
+            <a href="https://github.com/celehs/PheCAP">PheCAP </a></td>
+<td><a href="https://pubmed.ncbi.nlm.nih.gov/33264411/">
+The Human Phenotype Ontology in 2021</a></td>       
     <tbody>
-</table>   
+</table>      
         
 #### Treatment Arms and Timing <a name="Treatment&arm"></a>
 With a given disease cohort, one may proceed to identify patients who received the relevant treatments, which are typically medications or procedures.

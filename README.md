@@ -189,7 +189,7 @@ After the data mart is created, the next step is to identify the disease cohort 
     <tbody>
 </table>   
         
-#### Treatment Arms and Timing<a name="Treatment&arm"></a>
+#### Treatment Arms and Timing <a name="Treatment&arm"></a>
 With a given disease cohort, one may proceed to identify patients who received the relevant treatments, which are typically medications or procedures.
 <table>
     <thead>
@@ -204,9 +204,14 @@ With a given disease cohort, one may proceed to identify patients who received t
         <tr>
             <td rowspan=1>Identify indication conditions before treatment
 </td>
-            <td>Phenotyping with temporal input</td>
-            <td><a href="https://phewascatalog.org/">Phenome Wide Association Studies</a></td>
-            <td><a href="https://pubmed.ncbi.nlm.nih.gov/20335276/">PheWAS: demonstrating the feasibility of a phenome-wide scan to discover gene-disease associations</a></td>
+            <td>Phenotyping with temporal input
+</td>
+            <td><a href="https://github.com/hestiri/MSMR">MSMR</a>
+            ,<a href="https://github.com/hestiri/TSPM
+">TSPM</a>
+            , <a href="https://github.com/hestiri/AgeMatters">AgeMatters</a>
+ </td>
+            <td><a href="https://pubmed.ncbi.nlm.nih.gov/33313899/">High-throughput phenotyping with temporal sequences.</a></td>
     <tbody>
 </table>   
 ### Variable Curation <a name="Modulethree"></a>

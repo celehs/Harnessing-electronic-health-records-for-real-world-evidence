@@ -10,16 +10,14 @@ This page provides the resources and tools mentioned from the entire available b
       + [Data Mart](#Datamart)
       + [Diease Corhort](#Diseasecorhort)
       + [Treatment Arms and Timing](#Treatment&arm)
-    - [Module three: Variable Curation](#Modulethree)
-      + [Endpoints](#Endpoints)
-      + [Missing Data](#Missingdata)
+    - [Module three: Variable Extraction](#Modulethree)
+      + [Extraction of Baseline Variables or Endpoints](#BaselineVariablesorEndpoints)
+      + [Baseline Variables](#BaselineVariables)
+      + [Baseline Endpoints](#BaselineEndpoints)
     - [Module four: Validation and Robust Modelling](#Modulefour) 
-      + [Validation and Tuning of Data Curation](#Validation) 
-      + [Robust analysis for imperfect data](#Imperfect) 
-      + [Robust adjustment for confounding](#Adconfound) 
-      + [Creation of Digital Twins from RWD](#Digitaltwins) 
-- [Contributing](#Contributing)
-- [License](#License)
+      + [Robust analysis and adjustment](#robust)
+
+
 ## Background and Flowchart<a name="BackgroundandFlowchart"></a>
 In this study, we outline an integrated pipeline to improve the resolution of EHR data that will enable researchers to perform robust analysis with high quality data from EHRs for RWE generation. Our pipeline has 4 modules: 1) creating meta-data for harmonization, 2) cohort construction, 3) variable curation, and 4) validation and robust modeling (Figure 1). The lists of methods and resources integrated into the pipeline are listed for each module of the pipeline, respectively. The pipeline contributes simultaneously to the creation of digital twins.
 
@@ -237,14 +235,18 @@ With a given disease cohort, one may proceed to identify patients who received t
             <td><a href="https://pubmed.ncbi.nlm.nih.gov/33313899/">High-throughput phenotyping with temporal sequences.</a></td>
     <tbody>
 </table>   
-### Variable Curation <a name="Modulethree"></a>
-#### Endpoints<a name="Endpoints"></a>
-#### Missing Data<a name="Missingdata"></a>
-### Validation and Robust Modelling<a name="Modulefour"></a>
-#### Validation and Tuning of Data Curation<a name="Validation"></a>
-#### Robust analysis for imperfect data<a name="Imperfect"></a>
-#### Robust adjustment for confounding<a name="Adconfound"></a>
-#### Creation of Digital Twins from RWD<a name="Digitaltwins"></a>
-## Contributing <a name="Contributing"></a>
-## License <a name="License"></a>
+        
+### Module three: Variable Extraction<a name="Modulethree"></a>
+RCT emulation with EHR data generally requires three categories of data elements: 1) the endpoints measuring the treatment effect; 2) eligibility criteria to match the RCT population; 3) confounding factors to correct for treatment by indication biases inherent in real world data. In the following, we describe the classification and extraction of the first two types while addressing the confounding in Module 4.
+
+#### Extraction of Baseline Variables or Endpoints<a name="BaselineVariablesorEndpoints"></a>
+
+#### Extraction of Baseline Variables <a name="BaselineVariables"></a>
+        
+#### Extraction of Baseline Endpoints <a name="BaselineEndpoints"></a>
+        
+### Module four: Validation and Robust Modelling<a name="Modulefour"></a>
+Confounding factors, variables that affect both the treatment assignment and outcome, must be properly adjusted. To minimize the bias, the pipeline should include 1) validation for optimizing the medical informatics tools in Modules 2 and 3 ; 2) analyses robust to remaining data error; 3) comprehensive confounding adjustment.
+#### Robust analysis and adjustment<a name="robust"></a>
+
 

@@ -119,12 +119,11 @@ LOINC, a universal standard for identifying laboratory observations: a 5-year up
             <td>Export curation</td>
             <td><a href="https://www.nlm.nih.gov/research/umls/index.html">UMLS</a>, <a href="https://www.wikidata.org/wiki/Wikidata:Database_download">Wikidata</a> </td>
             <td><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC308795/">The Unified Medical Language System (UMLS): integrating biomedical terminology, <a href="https://en.wikipedia.org/wiki/Freebase_(database)">Freebase (database)
-</a></td>
         </tr>
         <tr>
             <td>Knowledge sources</td>
-         <td> <a href="https://bio.nlplab.org/pdf/pyysalo13literature.pdf">Distributional Semantics Resources </a>, <a href="?">35-39</a></td>
-              <td><a href="http://bio.nlplab.org/">Biomedical natural language processing Tools and resources</a></td>
+         <td> <a href="https://bio.nlplab.org/pdf/pyysalo13literature.pdf">Distributional Semantics Resources </a>, <a href="https://pubmed.ncbi.nlm.nih.gov/"> PubMed </a>,  <a href="https://www.merckmanuals.com/">MerkMannual
+</a>,  <a href="https://www.medscape.com/">Medscape</a></td> <td><a href="https://pubmed.ncbi.nlm.nih.gov/25160253/">Exploring the application of deep learning techniques on medical text corpora</a></td>
         </tr>   
         <tr>
             <td>EHR data</td>
@@ -134,7 +133,7 @@ RxNorm: Prescription for Electronic Drug Information Exchange</a></td>
         </tr>
     </tbody>
 </table>
-
+             
 
 
 ### Module two: Cohort Construction <a name="Moduletwo"></a>

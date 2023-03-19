@@ -240,13 +240,91 @@ With a given disease cohort, one may proceed to identify patients who received t
 RCT emulation with EHR data generally requires three categories of data elements: 1) the endpoints measuring the treatment effect; 2) eligibility criteria to match the RCT population; 3) confounding factors to correct for treatment by indication biases inherent in real world data. In the following, we describe the classification and extraction of the first two types while addressing the confounding in Module 4.
 
 #### Extraction of Baseline Variables or Endpoints<a name="BaselineVariablesorEndpoints"></a>
-
+<table>
+    <thead>
+        <tr>
+            <th>Use</th>
+            <th>Methods</th>
+            <th>Links</th>
+             <th>References</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Extraction of binary variables through phenotypings</td>
+            <td>Same as Identify patients with disease of interest through phenotyping</td>
+            <td></td>
+            <td></td>
+        <tr>
+             <td>Extraction of numerical variables through NLP</td>
+             <td><a href="https://pubmed.ncbi.nlm.nih.gov/33313899/">EXTEND, NICE</a></td>
+             <td><a href="https://pubmed.ncbi.nlm.nih.gov/33313899/">EXTEND, NICE</a></td>
+            <td><a href="https://pubmed.ncbi.nlm.nih.gov/33313899/">EXTEND, NICE</a></td>
+    <tbody>
+</table>   
+        
 #### Extraction of Baseline Variables <a name="BaselineVariables"></a>
+        <table>
+    <thead>
+        <tr>
+            <th>Use</th>
+            <th>Methods</th>
+            <th>Links</th>
+             <th>References</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Extraction of radiological characteristics through medical AI</td>
+            <td>Same as Identify patients with disease of interest through phenotyping</td>
+            <td></td>
+            <td></td>
+         <tr>    
+    <tbody>
+</table>   
         
 #### Extraction of Baseline Endpoints <a name="BaselineEndpoints"></a>
+        <table>
+    <thead>
+        <tr>
+            <th>Use</th>
+            <th>Methods</th>
+            <th>Links</th>
+             <th>References</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Extraction of event time through incidence phenotyping</td>
+            <td>Unsupervised, Semi-supervised, Supervised</td>
+            <td></td>
+            <td></td>
+        <tr>
+    <tbody>
+</table>   
+        
         
 ### Module four: Validation and Robust Modelling<a name="Modulefour"></a>
 Confounding factors, variables that affect both the treatment assignment and outcome, must be properly adjusted. To minimize the bias, the pipeline should include 1) validation for optimizing the medical informatics tools in Modules 2 and 3 ; 2) analyses robust to remaining data error; 3) comprehensive confounding adjustment.
+        
 #### Robust analysis and adjustment<a name="robust"></a>
-
-
+        
+<table>
+    <thead>
+        <tr>
+            <th>Use</th>
+            <th>Methods</th>
+            <th>Links</th>
+             <th>References</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Efficient and robust estimation of treatment effect with partially annotated noisy data</td>
+            <td>SMMAL</td>
+            <td></td>
+            <td></td>
+        <tr>
+    <tbody>
+</table>   
+        

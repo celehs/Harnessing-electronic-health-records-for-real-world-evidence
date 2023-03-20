@@ -185,9 +185,9 @@ After the data mart is created, the next step is to identify the disease cohort 
  <tr>
   <td rowspan=11>Identify patients with disease of interest through phenotyping</td>
   <td>Unsupervised: anchor and learn, XPRESS53, APHRODITE, PheNorm, MAP and sureLDA</td>
-  <td><a href="https://phewascatalog.org/">Phenome Wide Association Studies</a>,<a href="https://github.com/clinicalml/anchorExplorer
-">Anchorexplorer</a>,<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5070523/
-">Express</a>,<a href="https://github.com/OHDSI/Aphrodite">Aphrodite</a>,<a href="https://celehs.github.io/PheNorm/">PheNorm</a>, <a href="https://github.com/celehs/MAP">MAP</a>, <a href="https://github.com/celehs/sureLDA">sureLDA</a></td>
+  <td><a href="https://phewascatalog.org/">Phenome Wide Association Studies</a>, <a href="https://github.com/clinicalml/anchorExplorer
+">Anchorexplorer</a>, <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5070523/
+">Express</a>, <a href="https://github.com/OHDSI/Aphrodite">Aphrodite</a>, <a href="https://celehs.github.io/PheNorm/">PheNorm</a>, <a href="https://github.com/celehs/MAP">MAP</a>, <a href="https://github.com/celehs/sureLDA">sureLDA</a></td>
   <td><a href="https://pubmed.ncbi.nlm.nih.gov/27107443/">
     Electronic medical record phenotyping using the anchor and learn framework</a>, <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5070523/">
       Learning statistical models of phenotypes using noisy labeled training data</a>, <a href="https://pubmed.ncbi.nlm.nih.gov/28815104/">
@@ -195,7 +195,7 @@ After the data mart is created, the next step is to identify the disease cohort 
           Enabling phenotypic big data with PheNorm</a>,
         <a href="https://pubmed.ncbi.nlm.nih.gov/31613361">
           High-throughput multimodal automated phenotyping (MAP) with application to PheWAS
-        </a>, <a href=" https://pubmed.ncbi.nlm.nih.gov/32548637/">A multidisease automated phenotyping method for the electronic health record</a></td><tr>          
+        </a>, <a href="https://pubmed.ncbi.nlm.nih.gov/32548637/">A multidisease automated phenotyping method for the electronic health record</a></td><tr>          
           <td>Semi-supervised: AFEP, SAFE, PSST, likelihood approach, and PheCAP</td>
           <td> <a href="https://github.com/ModelOriented/SAFE">SAFE</a>, <a href="https://github.com/celehs/PheCAP">PheCAP </a></td>       
           <td><a href="https://pubmed.ncbi.nlm.nih.gov/25929596/">

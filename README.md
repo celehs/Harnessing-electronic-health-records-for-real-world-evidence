@@ -289,6 +289,9 @@ RCT emulation with EHR data generally requires three categories of data elements
             <td>organs, blood vessel, neural system, <a href="https://github.com/iMED-Lab/CS-Net">CS-Net</a>, <a href="https://github.com/wentaozhu/D">DeepLung</a>, nodule detection, cancer staging, fractional flow, reserve</td>
             <td><a href="https://www.sciencedirect.com/science/article/abs/pii/S1361841518302524?via%3Dihub">Abdominal multi-organ segmentation with organ-attention networks and statistical fusion</a>, <a href="https://www.sciencedirect.com/science/article/abs/pii/S0169260717313421?via%3Dihub">Blood vessel segmentation algorithms - Review of methods, datasets and evaluation metrics</a>, <a href="https://www.springerprofessional.de/en/segmentation-of-corneal-nerves-using-a-u-net-based-convolutional/16122514">Segmentation of Corneal Nerves Using a U-Net-Based Convolutional Neural Network</a>, <a href="https://www.springerprofessional.de/cs-net-channel-and-spatial-attention-network-for-curvilinear-str/17254998">Channel and Spatial Attention Network for Curvilinear Structure Segmentation</a>,  <a href="https://www.sciencedirect.com/science/article/abs/pii/S0031320318302711">Automated pulmonary nodule detection in CT images using deep convolutional neural networks</a>,  <a href="https://arxiv.org/pdf/1801.09555.pdfeepLung
 ">DeepLung: Deep 3D Dual Path Nets for Automated Pulmonary Nodule Detection and Classification</a>, <a href="https://www.ahajournals.org/doi/full/10.1161/CIRCIMAGING.117.007217">Diagnostic accuracy of a deep learning approach to calculate FFR from coronary CT angiography</a>, <a href="https://academic.oup.com/ehjcimaging/article/21/4/437/5522163?login=false">Diagnostic accuracy of 3D deep-learning-based fully automated estimation of patient-level minimum fractional flow reserve from coronary computed tomography angiography</a></td>
+            
+            
+            
          <tr>    
     <tbody>
 </table>   
@@ -307,14 +310,20 @@ RCT emulation with EHR data generally requires three categories of data elements
     </thead>
     <tbody>
         <tr>
-            <td>Extraction of event time through incidence phenotyping</td>
-            <td>Unsupervised, Semi-supervised, Supervised </td>
-            <td>Unsupervised:<a href="https://github.com/chl8856/AC_TPC">AC_TPC</a>
-, Semi-supervised: <a href="https://github.com/celehs/SAMGEP">SAMGEP</a>, Supervised</td>
-            <td>
-            <a href="https://ieeexplore.ieee.org/document/6346556/metrics#metrics">Disease progression modeling using Hidden Markov Models</a>, <a href="https://proceedings.mlr.press/v119/lee20h.html">Temporal Phenotyping using Deep Predictive Clustering of Disease Progression</a>, <a href="https://www.medrxiv.org/content/10.1101/2021.03.07.21253096v1
+            <td rowspan=3>Extraction of event time through incidence phenotyping</td>
+            <td>Unsupervised</td>
+            <td>Unsupervised: <a href="https://github.com/chl8856/AC_TPC">AC_TPC</a></td>
+             <td><a href="https://ieeexplore.ieee.org/document/6346556/metrics#metrics">Disease progression modeling using Hidden Markov Models</a>, <a href="https://proceedings.mlr.press/v119/lee20h.html">Temporal Phenotyping using Deep Predictive Clustering of Disease Progression</a><td>
+         <tr>
+            <td>Semi-supervised</td>
+            <td>Semi-supervised: <a href="https://github.com/celehs/SAMGEP">SAMGEP</a></td>
+            <td> <a href="https://www.medrxiv.org/content/10.1101/2021.03.07.21253096v1
 ">Samgep: A novel method for prediction of phenotype event times using the electronic health record</a>, <a href="https://link.springer.com/article/10.1007/s10985-022-09557-5
-">Semi-supervised Approach to Event Time Annotation Using Longitudinal Electronic Health Records</a>,  <a href="https://ascopubs.org/doi/10.1200/CCI.17.00163?url_ver=Z39.88-2003&rfr_id=ori:rid:crossref.org&rfr_dat=cr_pub%20%200pubmed">Determining the Time of Cancer Recurrence Using Claims or Electronic Medical Record Data</a>, <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4732933/
+">Semi-supervised Approach to Event Time Annotation Using Longitudinal Electronic Health Records</a><td> 
+          <tr>
+             <td>Supervised</td>
+             <td>Supervised</td>   
+             <td> <a href="https://ascopubs.org/doi/10.1200/CCI.17.00163?url_ver=Z39.88-2003&rfr_id=ori:rid:crossref.org&rfr_dat=cr_pub%20%200pubmed">Determining the Time of Cancer Recurrence Using Claims or Electronic Medical Record Data</a>, <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4732933/
 ">Detecting Lung and Colorectal Cancer Recurrence Using Structured Clinical/Administrative Data to Enable Outcomes Research and Population Health Management</a>
             </td>
         <tr>

@@ -308,7 +308,9 @@ RCT emulation with EHR data generally requires three categories of data elements
     <tbody>
         <tr>
             <td>Extraction of event time through incidence phenotyping</td>
-            <td>Unsupervised, Semi-supervised, Supervised</td>
+            <td>Unsupervised, Semi-supervised, Supervised </td>
+            <td>Unsupervised:<a href="https://github.com/chl8856/AC_TPC">AC_TPC</a>
+, Semi-supervised: <a href="https://github.com/celehs/SAMGEP">SAMGEP</a>, Supervised</td>
             <td></td>
             <td></td>
         <tr>

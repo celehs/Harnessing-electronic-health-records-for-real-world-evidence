@@ -172,7 +172,6 @@ The Human Phenotype Ontology in 2021</a></td>
 <a name="Diseasecorhort"></a>
 #### Diease Corhort
 After the data mart is created, the next step is to identify the disease cohort containing the subset of patients within the data mart who have the disease of interest.Commonly used phenotyping tools can be roughly classified as either rule-based or machine-learning based. Machine learning approaches can be further classified as either weakly supervised, semi-supervised, or supervised based on the availability of gold-standard labels for model training.
-
 <table>
     <thead>
         <tr>
@@ -183,36 +182,35 @@ After the data mart is created, the next step is to identify the disease cohort 
         </tr>
     </thead>
     <tbody>
-        <tr>
-            <td rowspan=11>Identify patients with disease of interest through phenotyping</td>
-            <td>Unsupervised: anchor and learn, XPRESS53, APHRODITE, PheNorm, MAP and sureLDA; Semi-supervised: AFEP, SAFE, PSST, likelihood approach, and PheCAP
- </td>
-            <td><a href="https://phewascatalog.org/">Phenome Wide Association Studies</a>,<a href="https://github.com/clinicalml/anchorExplorer
+ <tr>
+  <td rowspan=11>Identify patients with disease of interest through phenotyping</td>
+  <td>Unsupervised: anchor and learn, XPRESS53, APHRODITE, PheNorm, MAP and sureLDA</td>
+  <td><a href="https://phewascatalog.org/">Phenome Wide Association Studies</a>,<a href="https://github.com/clinicalml/anchorExplorer
 ">Anchorexplorer</a>,<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5070523/
-">Express</a>,<a href="https://github.com/OHDSI/Aphrodite">Aphrodite</a>,<a href="https://celehs.github.io/PheNorm/">PheNorm</a>, <a href="https://github.com/celehs/MAP">MAP</a>, <a href="https://github.com/celehs/sureLDA">sureLDA</a>, <a href="https://github.com/ModelOriented/SAFE">SAFE</a>, <a href="https://github.com/ModelOriented/SAFE">SAFE</a>,
-            <a href="https://pubmed.ncbi.nlm.nih.gov/27107443/![image](https://user-images.githubusercontent.com/128131210/226155858-3c6eb32b-4348-4440-85ac-871a354064d3.png)
-">PheCAP </a></td>
-<td><a href="https://pubmed.ncbi.nlm.nih.gov/27107443/">
-Electronic medical record phenotyping using the anchor and learn framework</a>, <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5070523/">
-Learning statistical models of phenotypes using noisy labeled training data</a>, <a href="https://pubmed.ncbi.nlm.nih.gov/28815104/">
-Electronic medical record phenotyping using the anchor and learn framework</a>, <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6251688/">
-Enabling phenotypic big data with PheNorm</a>,
-<a href="https://pubmed.ncbi.nlm.nih.gov/31613361">
-High-throughput multimodal automated phenotyping (MAP) with application to PheWAS
-</a>, 
-<a href="https://pubmed.ncbi.nlm.nih.gov/25929596/">
-Toward high-throughput phenotyping: unbiased automated feature extraction and selection from knowledge sources</a>, <a href="https://pubmed.ncbi.nlm.nih.gov/27632993
+">Express</a>,<a href="https://github.com/OHDSI/Aphrodite">Aphrodite</a>,<a href="https://celehs.github.io/PheNorm/">PheNorm</a>, <a href="https://github.com/celehs/MAP">MAP</a>, <a href="https://github.com/celehs/sureLDA">sureLDA</a></td>
+  <td><a href="https://pubmed.ncbi.nlm.nih.gov/27107443/">
+    Electronic medical record phenotyping using the anchor and learn framework</a>, <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5070523/">
+      Learning statistical models of phenotypes using noisy labeled training data</a>, <a href="https://pubmed.ncbi.nlm.nih.gov/28815104/">
+        Electronic medical record phenotyping using the anchor and learn framework</a>, <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6251688/">
+          Enabling phenotypic big data with PheNorm</a>,
+        <a href="https://pubmed.ncbi.nlm.nih.gov/31613361">
+          High-throughput multimodal automated phenotyping (MAP) with application to PheWAS
+        </a>, <a href=" https://pubmed.ncbi.nlm.nih.gov/32548637/">A multidisease automated phenotyping method for the electronic health record</a></td><tr>          
+          <td>Semi-supervised: AFEP, SAFE, PSST, likelihood approach, and PheCAP</td>
+          <td> <a href="https://github.com/ModelOriented/SAFE">SAFE</a>, <a href="https://github.com/celehs/PheCAP">PheCAP </a></td>       
+          <td><a href="https://pubmed.ncbi.nlm.nih.gov/25929596/">
+            Toward high-throughput phenotyping: unbiased automated feature extraction and selection from knowledge sources</a>, <a href="https://pubmed.ncbi.nlm.nih.gov/27632993
 ">
-Surrogate-assisted feature extraction for high-throughput phenotyping
-</a>, <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6371355/">
-Phenotyping through Semi-Supervised Tensor Factorization (PSST)
-</a>, <a href="https://pubmed.ncbi.nlm.nih.gov/31722396/">
-A maximum likelihood approach to electronic health record phenotyping using positive and unlabeled patients.
-</a>, <a href="https://pubmed.ncbi.nlm.nih.gov/31748751">
-High-throughput phenotyping with electronic medical record data using a common semi-supervised approach (PheCAP)</a> </td>       
-    <tbody>
-</table>      
-
+              Surrogate-assisted feature extraction for high-throughput phenotyping
+            </a>, <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6371355/">
+              Phenotyping through Semi-Supervised Tensor Factorization (PSST)
+            </a>, <a href="https://pubmed.ncbi.nlm.nih.gov/31722396/">
+              A maximum likelihood approach to electronic health record phenotyping using positive and unlabeled patients.
+            </a>, <a href="https://pubmed.ncbi.nlm.nih.gov/31748751">
+              High-throughput phenotyping with electronic medical record data using a common semi-supervised approach (PheCAP)</a></td>       
+              <tbody>
+              </table>      
+            
 <a name="Treatment&arm"></a>
 #### Treatment Arms and Timing
 With a given disease cohort, one may proceed to identify patients who received the relevant treatments, which are typically medications or procedures.
@@ -313,19 +311,18 @@ RCT emulation with EHR data generally requires three categories of data elements
             <td rowspan=3>Extraction of event time through incidence phenotyping</td>
             <td>Unsupervised</td>
             <td>Unsupervised: <a href="https://github.com/chl8856/AC_TPC">AC_TPC</a></td>
-             <td><a href="https://ieeexplore.ieee.org/document/6346556/metrics#metrics">Disease progression modeling using Hidden Markov Models</a>, <a href="https://proceedings.mlr.press/v119/lee20h.html">Temporal Phenotyping using Deep Predictive Clustering of Disease Progression</a><td>
+             <td><a href="https://ieeexplore.ieee.org/document/6346556/metrics#metrics">Disease progression modeling using Hidden Markov Models</a>, <a href="https://proceedings.mlr.press/v119/lee20h.html">Temporal Phenotyping using Deep Predictive Clustering of Disease Progression</a></td>
          <tr>
             <td>Semi-supervised</td>
             <td>Semi-supervised: <a href="https://github.com/celehs/SAMGEP">SAMGEP</a></td>
             <td> <a href="https://www.medrxiv.org/content/10.1101/2021.03.07.21253096v1
 ">Samgep: A novel method for prediction of phenotype event times using the electronic health record</a>, <a href="https://link.springer.com/article/10.1007/s10985-022-09557-5
-">Semi-supervised Approach to Event Time Annotation Using Longitudinal Electronic Health Records</a><td> 
+">Semi-supervised Approach to Event Time Annotation Using Longitudinal Electronic Health Records</a></td> 
           <tr>
              <td>Supervised</td>
              <td>Supervised</td>   
              <td> <a href="https://ascopubs.org/doi/10.1200/CCI.17.00163?url_ver=Z39.88-2003&rfr_id=ori:rid:crossref.org&rfr_dat=cr_pub%20%200pubmed">Determining the Time of Cancer Recurrence Using Claims or Electronic Medical Record Data</a>, <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4732933/
-">Detecting Lung and Colorectal Cancer Recurrence Using Structured Clinical/Administrative Data to Enable Outcomes Research and Population Health Management</a>
-            </td>
+">Detecting Lung and Colorectal Cancer Recurrence Using Structured Clinical/Administrative Data to Enable Outcomes Research and Population Health Management</a></td>
         <tr>
     <tbody>
 </table>   

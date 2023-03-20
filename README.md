@@ -311,8 +311,12 @@ RCT emulation with EHR data generally requires three categories of data elements
             <td>Unsupervised, Semi-supervised, Supervised </td>
             <td>Unsupervised:<a href="https://github.com/chl8856/AC_TPC">AC_TPC</a>
 , Semi-supervised: <a href="https://github.com/celehs/SAMGEP">SAMGEP</a>, Supervised</td>
-            <td></td>
-            <td></td>
+            <td>
+            <a href="https://ieeexplore.ieee.org/document/6346556/metrics#metrics">Disease progression modeling using Hidden Markov Models</a>, <a href="https://proceedings.mlr.press/v119/lee20h.html">Temporal Phenotyping using Deep Predictive Clustering of Disease Progression</a>, <a href="https://www.medrxiv.org/content/10.1101/2021.03.07.21253096v1
+">Samgep: A novel method for prediction of phenotype event times using the electronic health record</a>, <a href="https://link.springer.com/article/10.1007/s10985-022-09557-5
+">Semi-supervised Approach to Event Time Annotation Using Longitudinal Electronic Health Records</a>,  <a href="https://ascopubs.org/doi/10.1200/CCI.17.00163?url_ver=Z39.88-2003&rfr_id=ori:rid:crossref.org&rfr_dat=cr_pub%20%200pubmed">Determining the Time of Cancer Recurrence Using Claims or Electronic Medical Record Data</a>, <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4732933/
+">Detecting Lung and Colorectal Cancer Recurrence Using Structured Clinical/Administrative Data to Enable Outcomes Research and Population Health Management</a>
+            </td>
         <tr>
     <tbody>
 </table>   
@@ -338,7 +342,7 @@ Confounding factors, variables that affect both the treatment assignment and out
             <td>Efficient and robust estimation of treatment effect with partially annotated noisy data</td>
             <td>SMMAL</td>
             <td></td>
-            <td></td>
+            <td><a href="https://arxiv.org/abs/2110.12336">Efficient and Robust Semi-supervised Estimation of ATE with Partially Annotated Treatment and Response</a></td>
         <tr>
     <tbody>
 </table>   

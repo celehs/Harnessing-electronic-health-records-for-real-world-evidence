@@ -17,20 +17,21 @@ This page provides the resources and tools mentioned from the entire available b
     - [Module four: Validation and Robust Modelling](#Modulefour) 
       + [Robust analysis and adjustment](#robust)
 
-
-## Background and Flowchart<a name="BackgroundandFlowchart"></a>
+<a name="BackgroundandFlowchart"></a>
+## Background and Flowchart
 In this study, we outline an integrated pipeline to improve the resolution of EHR data that will enable researchers to perform robust analysis with high quality data from EHRs for RWE generation. Our pipeline has 4 modules: 1) creating meta-data for harmonization, 2) cohort construction, 3) variable curation, and 4) validation and robust modeling (Figure 1). The lists of methods and resources integrated into the pipeline are listed for each module of the pipeline, respectively. The pipeline contributes simultaneously to the creation of digital twins.
 
 ![The Integrated Data Curation pipeline designed to enable researchers to extract high quality data from electronic health records (EHRs) for RWE.](https://github.com/QingyiZengumn/Harnessing-electronic-health-records-for-real-world-evidence/blob/main/Flowchart.png)
 <a name="myfootnote1">**Figure 1**</a>:The Integrated Data Curation pipeline designed to enable researchers to extract high quality data from electronic health records (EHRs) for RWE.
 
 
-
-## Method <a name="Method"></a>
-
-### Module one: Creating Meta-Data for Harmonization<a name="Moduleone"></a>
+<a name="Method"></a>
+## Method 
+<a name="Moduleone"></a>
+### Module one: Creating Meta-Data for Harmonization
 The first step in our pipeline is to perform data harmonization by mapping clinical variables of interest to relevant sources of data within EHRs. To make this mapping process more efficient and transparent, we propose an automated method using NLP for data harmonization. This approach can help streamline the process and improve accuracy in identifying the clinical relevant concepts.
-#### Concept Identification <a name="ConceptIden"></a>
+ <a name="ConceptIden"></a>
+#### Concept Identification
 Identify the medical concepts associated with the clinical variables from the RCT documents using existing clinical NLP software.
 <table>
     <thead>
@@ -70,7 +71,8 @@ Entity Extraction for Clinical Notes, a Comparison Between MetaMap and Amazon Co
     </tbody>
 </table>
 
-#### Concept Matching <a name="ConceptMatching"></a>
+<a name="ConceptMatching"></a>
+#### Concept Matching
 Match the identified medical concepts to both structured and unstructured EHR data elements.
 <table>
     <thead>
@@ -136,12 +138,12 @@ Clinical Knowledge Extraction via Sparse Embedding Regression (KESER) with Multi
 </table>
              
 
-
-### Module two: Cohort Construction <a name="Moduletwo"></a>
+<a name="Moduletwo"></a>
+### Module two: Cohort Construction
 The construction of the study cohort for RWE involves identifying the patients with the condition/disease of interest, their time window for the indication and whether they underwent the interventions in the RCT. EHR data contain a large amount of data of which a subset is relevant to the study.   To avoid involving unnecessary personal health identifiers into the data for analysist, we recommend a 3-phase cohort construction strategy that gradually extracts the minimally necessary data from the EHR, starting from an inclusive data mart to the disease cohort and then to the treatment arms. 
 
-
-#### Data Mart<a name="Datamart"></a>
+<a name="Datamart"></a>
+#### Data Mart
 The data mart is designed to include all patients with any indication of the disease or condition of interest. To achieve the desired inclusiveness, researchers should summarize a broad list of EHR variables with high sensitivity and construct the data mart to capture patients with at least one occurrence of the listed variables.
 
 <table>
@@ -167,7 +169,8 @@ The Human Phenotype Ontology in 2021</a></td>
     <tbody>
 </table>    
 
-#### Diease Corhort<a name="Diseasecorhort"></a>
+<a name="Diseasecorhort"></a>
+#### Diease Corhort
 After the data mart is created, the next step is to identify the disease cohort containing the subset of patients within the data mart who have the disease of interest.Commonly used phenotyping tools can be roughly classified as either rule-based or machine-learning based. Machine learning approaches can be further classified as either weakly supervised, semi-supervised, or supervised based on the availability of gold-standard labels for model training.
 
 <table>
@@ -209,8 +212,9 @@ A maximum likelihood approach to electronic health record phenotyping using posi
 High-throughput phenotyping with electronic medical record data using a common semi-supervised approach (PheCAP)</a> </td>       
     <tbody>
 </table>      
-        
-#### Treatment Arms and Timing <a name="Treatment&arm"></a>
+
+<a name="Treatment&arm"></a>
+#### Treatment Arms and Timing
 With a given disease cohort, one may proceed to identify patients who received the relevant treatments, which are typically medications or procedures.
 <table>
     <thead>
@@ -235,11 +239,13 @@ With a given disease cohort, one may proceed to identify patients who received t
             <td><a href="https://pubmed.ncbi.nlm.nih.gov/33313899/">High-throughput phenotyping with temporal sequences.</a></td>
     <tbody>
 </table>   
-        
-### Module three: Variable Extraction<a name="Modulethree"></a>
+ 
+<a name="Modulethree"></a>
+### Module three: Variable Extraction
 RCT emulation with EHR data generally requires three categories of data elements: 1) the endpoints measuring the treatment effect; 2) eligibility criteria to match the RCT population; 3) confounding factors to correct for treatment by indication biases inherent in real world data. In the following, we describe the classification and extraction of the first two types while addressing the confounding in Module 4.
 
-#### Extraction of Baseline Variables or Endpoints<a name="BaselineVariablesorEndpoints"></a>
+<a name="BaselineVariablesorEndpoints"></a>
+#### Extraction of Baseline Variables or Endpoints
 <table>
     <thead>
         <tr>
@@ -262,8 +268,9 @@ RCT emulation with EHR data generally requires three categories of data elements
             <td><a href="https://pubmed.ncbi.nlm.nih.gov/33313899/">EXTEND, NICE</a></td>
     <tbody>
 </table>   
-        
-#### Extraction of Baseline Variables <a name="BaselineVariables"></a>
+ 
+ <a name="BaselineVariables"></a>
+#### Extraction of Baseline Variables
         
 <table>
     <thead>
@@ -284,7 +291,8 @@ RCT emulation with EHR data generally requires three categories of data elements
     <tbody>
 </table>   
         
-#### Extraction of Baseline Endpoints <a name="BaselineEndpoints"></a>
+<a name="BaselineEndpoints"></a>        
+#### Extraction of Baseline Endpoints
         
 <table>
     <thead>
@@ -305,11 +313,12 @@ RCT emulation with EHR data generally requires three categories of data elements
     <tbody>
 </table>   
         
-        
-### Module four: Validation and Robust Modelling<a name="Modulefour"></a>
+<a name="Modulefour"></a>        
+### Module four: Validation and Robust Modelling
 Confounding factors, variables that affect both the treatment assignment and outcome, must be properly adjusted. To minimize the bias, the pipeline should include 1) validation for optimizing the medical informatics tools in Modules 2 and 3 ; 2) analyses robust to remaining data error; 3) comprehensive confounding adjustment.
-        
-#### Robust analysis and adjustment<a name="robust"></a>
+
+<a name="robust"></a>
+#### Robust analysis and adjustment
         
 <table>
     <thead>

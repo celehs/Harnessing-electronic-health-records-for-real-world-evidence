@@ -259,13 +259,14 @@ RCT emulation with EHR data generally requires three categories of data elements
         <tr>
             <td>Extraction of binary variables through phenotypings</td>
             <td>Same as Identify patients with disease of interest through phenotyping</td>
-            <td></td>
-            <td></td>
+            <td>Same as Identify patients with disease of interest through phenotyping</td>
+            <td>Same as Identify patients with disease of interest through phenotyping</td>
         <tr>
              <td>Extraction of numerical variables through NLP</td>
-             <td><a href="https://pubmed.ncbi.nlm.nih.gov/33313899/">EXTEND, NICE</a></td>
-             <td><a href="https://pubmed.ncbi.nlm.nih.gov/33313899/">EXTEND, NICE</a></td>
-            <td><a href="https://pubmed.ncbi.nlm.nih.gov/33313899/">EXTEND, NICE</a></td>
+             <td>EXTEND, NICE</td>
+             <td><a href="https://github.com/TianrunCai/EXTEND
+">EXTEND</a>, <a href="https://celehs.github.io/NILE.html">NILE</a> </td>
+            <td><a href="https://bmcmedinformdecismak.biomedcentral.com/articles/10.1186/s12911-019-0970-1">EXTraction of EMR numerical data: an efficient and generalizable tool to EXTEND clinical research</a>,<a href="https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2781685">Performance of a Machine Learning Algorithm Using Electronic Health Record Data to Identify and Estimate Survival in a Longitudinal Cohort of Patients With Lung Cancer</a></td>
     <tbody>
 </table>   
  

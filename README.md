@@ -311,11 +311,11 @@ RCT emulation with EHR data generally requires three categories of data elements
         <tr>
             <td rowspan=3>Extraction of event time through incidence phenotyping</td>
             <td>Unsupervised</td>
-            <td>Unsupervised: <a href="https://github.com/chl8856/AC_TPC">AC_TPC</a></td>
+            <td>AC_TPC(<a href="https://github.com/chl8856/AC_TPC">Code</a>,<a href="https://proceedings.mlr.press/v119/lee20h.html">Ref</a>)</td>
              <td><a href="https://ieeexplore.ieee.org/document/6346556/metrics#metrics">Disease progression modeling using Hidden Markov Models</a>, <a href="https://proceedings.mlr.press/v119/lee20h.html">Temporal Phenotyping using Deep Predictive Clustering of Disease Progression</a></td>
          <tr>
             <td>Semi-supervised</td>
-            <td>Semi-supervised: <a href="https://github.com/celehs/SAMGEP">SAMGEP</a></td>
+             <td>SAMGEP(<a href="https://github.com/celehs/SAMGEP">Code</a>,<a href="https://www.medrxiv.org/content/10.1101/2021.03.07.21253096v1">Ref</a>)</td></td>
             <td> <a href="https://www.medrxiv.org/content/10.1101/2021.03.07.21253096v1
 ">Samgep: A novel method for prediction of phenotype event times using the electronic health record</a>, <a href="https://link.springer.com/article/10.1007/s10985-022-09557-5
 ">Semi-supervised Approach to Event Time Annotation Using Longitudinal Electronic Health Records</a></td> 
@@ -347,7 +347,7 @@ Confounding factors, variables that affect both the treatment assignment and out
     <tbody>
         <tr>
             <td>Efficient and robust estimation of treatment effect with partially annotated noisy data</td>
-            <td>SMMAL(Code, <a href="https://arxiv.org/abs/2110.12336">Ref</a></td>)</td>
+             <td>SMMAL(Code, <a href="https://arxiv.org/abs/2110.12336">Ref</a>)</td></td>
             <td></td>
             <td><a href="https://arxiv.org/abs/2110.12336">Efficient and Robust Semi-supervised Estimation of ATE with Partially Annotated Treatment and Response</a></td>
         <tr>

@@ -347,7 +347,7 @@ Confounding factors, variables that affect both the treatment assignment and out
     <tbody>
         <tr>
             <td>Efficient and robust estimation of treatment effect with partially annotated noisy data</td>
-            <td>SMMAL</td>
+            <td>SMMAL(Code, <a href="https://arxiv.org/abs/2110.12336">Ref</a></td>)</td>
             <td></td>
             <td><a href="https://arxiv.org/abs/2110.12336">Efficient and Robust Semi-supervised Estimation of ATE with Partially Annotated Treatment and Response</a></td>
         <tr>

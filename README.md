@@ -262,7 +262,7 @@ RCT emulation with EHR data generally requires three categories of data elements
         <tr>
              <td>Extraction of numerical variables through NLP</td>
              <td>EXTEND (<a href="https://github.com/TianrunCai/EXTEND
-">Code</a>, <a href="https://bmcmedinformdecismak.biomedcentral.com/articles/10.1186/s12911-019-0970-1">Ref</a>), NICE</td>
+">Code</a>, <a href="https://bmcmedinformdecismak.biomedcentral.com/articles/10.1186/s12911-019-0970-1">Ref</a>), NILE(<a href="https://celehs.github.io/NILE.html">Code</a>, <a href="https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2781685">Ref</a>)</td>
              <td><a href="https://github.com/TianrunCai/EXTEND
 ">EXTEND</a>, <a href="https://celehs.github.io/NILE.html">NILE</a> </td>
             <td><a href="https://bmcmedinformdecismak.biomedcentral.com/articles/10.1186/s12911-019-0970-1">EXTraction of EMR numerical data: an efficient and generalizable tool to EXTEND clinical research</a>,<a href="https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2781685">Performance of a Machine Learning Algorithm Using Electronic Health Record Data to Identify and Estimate Survival in a Longitudinal Cohort of Patients With Lung Cancer</a></td>
@@ -285,7 +285,8 @@ RCT emulation with EHR data generally requires three categories of data elements
         <tr>
             <td>Extraction of radiological characteristics through medical AI</td>
             <td>Same as Identify patients with disease of interest through phenotyping</td>
-            <td>organs, blood vessel, neural system, <a href="https://github.com/iMED-Lab/CS-Net">CS-Net</a>, <a href="https://github.com/wentaozhu/D">DeepLung</a>, nodule detection, cancer staging, fractional flow, reserve</td>
+           <td>organs, blood vessel, neural system, CS-Net(<a href="https://github.com/iMED-Lab/CS-Net">Code</a>, <a href="https://www.springerprofessional.de/cs-net-channel-and-spatial-attention-network-for-curvilinear-str/17254998">Ref</a>),
+DeepLung(<a href="https://github.com/wentaozhu/D">Code</a>, <a href="https://arxiv.org/pdf/1801.09555.pdfeepLung">Ref</a>), nodule detection, cancer staging, fractional flow, reserve</td>
             <td><a href="https://www.sciencedirect.com/science/article/abs/pii/S1361841518302524?via%3Dihub">Abdominal multi-organ segmentation with organ-attention networks and statistical fusion</a>, <a href="https://www.sciencedirect.com/science/article/abs/pii/S0169260717313421?via%3Dihub">Blood vessel segmentation algorithms - Review of methods, datasets and evaluation metrics</a>, <a href="https://www.springerprofessional.de/en/segmentation-of-corneal-nerves-using-a-u-net-based-convolutional/16122514">Segmentation of Corneal Nerves Using a U-Net-Based Convolutional Neural Network</a>, <a href="https://www.springerprofessional.de/cs-net-channel-and-spatial-attention-network-for-curvilinear-str/17254998">Channel and Spatial Attention Network for Curvilinear Structure Segmentation</a>,  <a href="https://www.sciencedirect.com/science/article/abs/pii/S0031320318302711">Automated pulmonary nodule detection in CT images using deep convolutional neural networks</a>,  <a href="https://arxiv.org/pdf/1801.09555.pdfeepLung
 ">DeepLung: Deep 3D Dual Path Nets for Automated Pulmonary Nodule Detection and Classification</a>, <a href="https://www.ahajournals.org/doi/full/10.1161/CIRCIMAGING.117.007217">Diagnostic accuracy of a deep learning approach to calculate FFR from coronary CT angiography</a>, <a href="https://academic.oup.com/ehjcimaging/article/21/4/437/5522163?login=false">Diagnostic accuracy of 3D deep-learning-based fully automated estimation of patient-level minimum fractional flow reserve from coronary computed tomography angiography</a></td>
             

@@ -201,20 +201,12 @@ sureLDA(<a href="https://github.com/celehs/sureLDA">Code</a>, <a href="https://p
         <a href="https://pubmed.ncbi.nlm.nih.gov/31613361">
           High-throughput multimodal automated phenotyping (MAP) with application to PheWAS
         </a>, <a href="https://pubmed.ncbi.nlm.nih.gov/32548637/">A multidisease automated phenotyping method for the electronic health record</a></td><tr>          
-          <td>Semi-supervised: AFEP(<a href=>Code</a>, <a href="https://pubmed.ncbi.nlm.nih.gov/25929596/">Ref</a>), 
-     SAFE(<a href="https://github.com/ModelOriented/SAFE">Code</a>, <a href="https://pubmed.ncbi.nlm.nih.gov/27632993/)">Ref</a>), PSST(<a href=>Code</a>, <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6371355/">Ref</a>), Likelihood approach(<a href=>Code</a>, <a href="https://pubmed.ncbi.nlm.nih.gov/31722396/">Ref</a>), PheCAP(<a href="https://github.com/celehs/PheCAP">Code</a>, <a href="https://pubmed.ncbi.nlm.nih.gov/31748751/">Ref</a>)</td>
+         <td>Semi-supervised: AFEP(<a>Code</a>, <a href="https://pubmed.ncbi.nlm.nih.gov/25929596/">Ref</a>), 
+     SAFE(<a href="https://github.com/ModelOriented/SAFE">Code</a>, <a href="https://pubmed.ncbi.nlm.nih.gov/27632993/)">Ref</a>), PSST(<a>Code</a>, <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6371355/">Ref</a>), Likelihood approach(<a>Code</a>, <a href="https://pubmed.ncbi.nlm.nih.gov/31722396/">Ref</a>), PheCAP(<a href="https://github.com/celehs/PheCAP">Code</a>, <a href="https://pubmed.ncbi.nlm.nih.gov/31748751/">Ref</a>)</td>
           <td> <a href="https://github.com/ModelOriented/SAFE">SAFE</a>, <a href="https://github.com/celehs/PheCAP">PheCAP </a></td>       
           <td><a href="https://pubmed.ncbi.nlm.nih.gov/25929596/">
-            Toward high-throughput phenotyping: unbiased automated feature extraction and selection from knowledge sources</a>, <a href="https://pubmed.ncbi.nlm.nih.gov/27632993
-">
-              Surrogate-assisted feature extraction for high-throughput phenotyping
-            </a>, <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6371355/">
-              Phenotyping through Semi-Supervised Tensor Factorization (PSST)
-            </a>, <a href="https://pubmed.ncbi.nlm.nih.gov/31722396/">
-              A maximum likelihood approach to electronic health record phenotyping using positive and unlabeled patients.
-            </a>, <a href="https://pubmed.ncbi.nlm.nih.gov/31748751">
-              High-throughput phenotyping with electronic medical record data using a common semi-supervised approach (PheCAP)</a></td>       
-              <tbody>
+            Toward high-throughput phenotyping: unbiased automated feature extraction and selection from knowledge sources</a>, <a href="https://pubmed.ncbi.nlm.nih.gov/27632993">Surrogate-assisted feature extraction for high-throughput phenotyping</a>, <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6371355/">Phenotyping through Semi-Supervised Tensor Factorization (PSST)</a>, <a href="https://pubmed.ncbi.nlm.nih.gov/31722396/">A maximum likelihood approach to electronic health record phenotyping using positive and unlabeled patients.</a>, <a href="https://pubmed.ncbi.nlm.nih.gov/31748751">High-throughput phenotyping with electronic medical record data using a common semi-supervised approach (PheCAP)</a></td>       
+        <tbody>
               </table>      
             
 <a name="Treatment&arm"></a>
@@ -233,13 +225,9 @@ With a given disease cohort, one may proceed to identify patients who received t
         <tr>
             <td rowspan=1>Identify indication conditions before treatment
 </td>
-            <td>Phenotyping with temporal input
-</td>
-            <td><a href="https://github.com/hestiri/MSMR">MSMR</a>
-            ,<a href="https://github.com/hestiri/TSPM
-">TSPM</a>
-            , <a href="https://github.com/hestiri/AgeMatters">AgeMatters</a>
- </td>
+           <td>Phenotyping with temporal input(Code:<a href="https://github.com/hestiri/MSMR">MSMR</a>, <a href="https://github.com/hestiri/TSPM
+">TSPM</a>,<a href="https://github.com/hestiri/AgeMatters">AgeMatters</a>, <a href="https://pubmed.ncbi.nlm.nih.gov/33313899/">Ref</a>)</td>
+            <td><a href="https://github.com/hestiri/MSMR">MSMR</a>, <a href="https://github.com/hestiri/TSPM">TSPM</a>, <a href="https://github.com/hestiri/AgeMatters">AgeMatters</a></td>
             <td><a href="https://pubmed.ncbi.nlm.nih.gov/33313899/">High-throughput phenotyping with temporal sequences.</a></td>
     <tbody>
 </table>   

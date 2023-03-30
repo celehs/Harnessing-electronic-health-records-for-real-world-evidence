@@ -301,18 +301,18 @@ DeepLung(<a href="https://github.com/wentaozhu/D">Code</a>, <a href="https://arx
     <tbody>
         <tr>
             <td rowspan=3>Extraction of event time through incidence phenotyping</td>
-            <td>Unsupervised</td>
+            <td>Unsupervised:AC_TPC(<a href="https://github.com/chl8856/AC_TPC">Code</a>,<a href="https://proceedings.mlr.press/v119/lee20h.html">Ref</a>)</td>
             <td>AC_TPC(<a href="https://github.com/chl8856/AC_TPC">Code</a>,<a href="https://proceedings.mlr.press/v119/lee20h.html">Ref</a>)</td>
              <td><a href="https://ieeexplore.ieee.org/document/6346556/metrics#metrics">Disease progression modeling using Hidden Markov Models</a>, <a href="https://proceedings.mlr.press/v119/lee20h.html">Temporal Phenotyping using Deep Predictive Clustering of Disease Progression</a></td>
          <tr>
-            <td>Semi-supervised</td>
+            <td>Semi-supervised: SAMGEP(<a href="https://github.com/celehs/SAMGEP">Code</a>,<a href="https://www.medrxiv.org/content/10.1101/2021.03.07.21253096v1">Ref</a>)</td>
              <td>SAMGEP(<a href="https://github.com/celehs/SAMGEP">Code</a>,<a href="https://www.medrxiv.org/content/10.1101/2021.03.07.21253096v1">Ref</a>)</td></td>
             <td> <a href="https://www.medrxiv.org/content/10.1101/2021.03.07.21253096v1
 ">Samgep: A novel method for prediction of phenotype event times using the electronic health record</a>, <a href="https://link.springer.com/article/10.1007/s10985-022-09557-5
 ">Semi-supervised Approach to Event Time Annotation Using Longitudinal Electronic Health Records</a></td> 
           <tr>
              <td>Supervised</td>
-             <td>Supervised</td>   
+             <td></td>   
              <td> <a href="https://ascopubs.org/doi/10.1200/CCI.17.00163?url_ver=Z39.88-2003&rfr_id=ori:rid:crossref.org&rfr_dat=cr_pub%20%200pubmed">Determining the Time of Cancer Recurrence Using Claims or Electronic Medical Record Data</a>, <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4732933/
 ">Detecting Lung and Colorectal Cancer Recurrence Using Structured Clinical/Administrative Data to Enable Outcomes Research and Population Health Management</a></td>
         <tr>

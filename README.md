@@ -104,13 +104,13 @@ Match the identified medical concepts to both structured and unstructured EHR da
 Clinical Classifications for Health Policy Research: Version 2 : Software and User’s Guide. (U.S. Department of Health and Human Services, Public Health Service, Agency for Health Care Policy and Research</a></td>
         </tr>   
         <tr>
-            <td>RxNorm</td>
+            <td>RxNorm(<a href="https://www.nlm.nih.gov/research/umls/rxnorm/docs/rxnormfiles.html">Code</a>, <a href="https://www.nlm.nih.gov/research/umls/rxnorm/RxNorm.pdf">Ref</a>)</td>
             <td><a href="https://www.nlm.nih.gov/research/umls/rxnorm/docs/rxnormfiles.html">RxNorm Files</a></td>
             <td><a href="https://www.nlm.nih.gov/research/umls/rxnorm/RxNorm.pdf">
 RxNorm: Prescription for Electronic Drug Information Exchange</a></td>
         </tr>
         <tr>
-            <td>Lonic</td>
+            <td>Lonic(<a href="https://loinc.org/downloads/">Code</a>, <a href="https://pubmed.ncbi.nlm.nih.gov/12651816/">Ref</a>)</td>
             <td><a href="https://loinc.org/downloads/">Download Lonic</a></td>
             <td><a href="https://pubmed.ncbi.nlm.nih.gov/12651816/">
 LOINC, a universal standard for identifying laboratory observations: a 5-year update</a></td>
@@ -160,14 +160,13 @@ The data mart is designed to include all patients with any indication of the dis
     <tbody>
         <tr>
             <td rowspan=2>Filter patients with diagnosis codes relevant to disease of interest</td>
-            <td>PheWAS catalog</td>
+            <td>PheWAS catalog(<a href="https://phewascatalog.org/">Code</a>, <a href="https://pubmed.ncbi.nlm.nih.gov/20335276/">Ref</a>)</td>
             <td><a href="https://phewascatalog.org/">Phenome Wide Association Studies</a></td>
             <td><a href="https://pubmed.ncbi.nlm.nih.gov/20335276/">PheWAS: demonstrating the feasibility of a phenome-wide scan to discover gene-disease associations</a></td>
         </tr>
-           <td>HPO</td>
-         <td><a href="https://hpo.jax.org/app/">The Human Phenotype Ontology</a></td>
-            <td><a href="https://pubmed.ncbi.nlm.nih.gov/33264411/">
-The Human Phenotype Ontology in 2021</a></td>       
+           <td>HPO(<a href="https://hpo.jax.org/app/">Code</a>, <a href="https://pubmed.ncbi.nlm.nih.gov/33264411/">Ref</a>)</td>
+          <td><a href="https://hpo.jax.org/app/">The Human Phenotype Ontology</a></td>
+            <td><a href="https://pubmed.ncbi.nlm.nih.gov/33264411/">The Human Phenotype Ontology in 2021</a></td>       
     <tbody>
 </table>    
 

@@ -184,7 +184,12 @@ After the data mart is created, the next step is to identify the disease cohort 
     <tbody>
  <tr>
   <td rowspan=11>Identify patients with disease of interest through phenotyping</td>
-  <td>Unsupervised: anchor and learn, XPRESS53, APHRODITE, PheNorm, MAP and sureLDA</td>
+    <td> Unsupervised: Anchorexplorer(<a href="https://github.com/clinicalml/anchorExplorer">Code</a>, <a href="https://pubmed.ncbi.nlm.nih.gov/27107443/">Ref</a>),
+Express(<a href="https://github.com/Vibhu-Agarwal/express">Code</a>, <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5070523/">Ref</a>),
+Aphrodite(<a href="https://github.com/OHDSI/Aphrodite">Code</a>, <a href="https://pubmed.ncbi.nlm.nih.gov/28815104/">Ref</a>),
+PheNorm(<a href="https://celehs.github.io/PheNorm/">Code</a>, <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6251688/">Ref</a>),
+MAP(<a href="https://github.com/celehs/MAP">Code</a>, <a href="https://pubmed.ncbi.nlm.nih.gov/31613361/">Ref</a>)
+sureLDA(<a href="https://github.com/celehs/sureLDA">Code</a>, <a href="https://pubmed.ncbi.nlm.nih.gov/32548637/">Ref</a>)</td>
   <td><a href="https://phewascatalog.org/">Phenome Wide Association Studies</a>, <a href="https://github.com/clinicalml/anchorExplorer
 ">Anchorexplorer</a>, <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5070523/
 ">Express</a>, <a href="https://github.com/OHDSI/Aphrodite">Aphrodite</a>, <a href="https://celehs.github.io/PheNorm/">PheNorm</a>, <a href="https://github.com/celehs/MAP">MAP</a>, <a href="https://github.com/celehs/sureLDA">sureLDA</a></td>
@@ -196,7 +201,8 @@ After the data mart is created, the next step is to identify the disease cohort 
         <a href="https://pubmed.ncbi.nlm.nih.gov/31613361">
           High-throughput multimodal automated phenotyping (MAP) with application to PheWAS
         </a>, <a href="https://pubmed.ncbi.nlm.nih.gov/32548637/">A multidisease automated phenotyping method for the electronic health record</a></td><tr>          
-          <td>Semi-supervised: AFEP, SAFE, PSST, likelihood approach, and PheCAP</td>
+          <td>Semi-supervised: AFEP(<a href=>Code</a>, <a href="https://pubmed.ncbi.nlm.nih.gov/25929596/">Ref</a>), 
+     SAFE(<a href="https://github.com/ModelOriented/SAFE">Code</a>, <a href="https://pubmed.ncbi.nlm.nih.gov/27632993/)">Ref</a>), PSST(<a href=>Code</a>, <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6371355/">Ref</a>), Likelihood approach(<a href=>Code</a>, <a href="https://pubmed.ncbi.nlm.nih.gov/31722396/">Ref</a>), PheCAP(<a href="https://github.com/celehs/PheCAP">Code</a>, <a href="https://pubmed.ncbi.nlm.nih.gov/31748751/">Ref</a>)</td>
           <td> <a href="https://github.com/ModelOriented/SAFE">SAFE</a>, <a href="https://github.com/celehs/PheCAP">PheCAP </a></td>       
           <td><a href="https://pubmed.ncbi.nlm.nih.gov/25929596/">
             Toward high-throughput phenotyping: unbiased automated feature extraction and selection from knowledge sources</a>, <a href="https://pubmed.ncbi.nlm.nih.gov/27632993

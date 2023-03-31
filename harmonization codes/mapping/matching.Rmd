@@ -1,0 +1,102 @@
+---
+title: "partialmatching"
+author: "Qingyi Zeng"
+date: "2023-01-16"
+output: html_document
+---
+```{r}
+library(readxl)
+library(tidyr)
+library(dplyr)
+library(stringi)
+library(stringr)
+library(plyr)
+library(data.table)
+Sys.getlocale()
+locale <- Sys.setlocale(category = "LC_ALL", locale = "C")
+
+## matching function
+partial_join <- function(x, y, by_x, pattern_y,type='type') 
+{
+  x$des =  paste(" ", x$des, " ")
+  y$term =  paste(" ", y$term, " ")
+  
+  idx_x <- sapply(y[[pattern_y]], grep, x[[by_x]],fixed=TRUE,ignore.case=TRUE,useBytes = FALSE)
+  idx_y <- sapply(seq_along(idx_x), function(i) rep(i, length(idx_x[[i]])))
+  df <- dplyr::bind_cols(x[unlist(idx_x), , drop = F],
+                        y[unlist(idx_y), , drop = F]) 
+  
+  ## add score column
+  df_s <-df %>% mutate( score=( str_count(df[[pattern_y]],'\\s+')+1 )/ (str_count(df[[by_x]],'\\s+')+1 ))
+  df_s$type=type
+  return(df_s)
+}
+
+# read data
+
+##cuiterm for paper1
+cuiterm <- read.csv("./output_data/paper1term.csv",header=TRUE)
+
+##filter the cui
+cuiterm <- cuiterm[cuiterm$term == "" | nchar(as.character(cuiterm$term)) > 2, ]
+dim(cuiterm)
+
+## phecode including exclphecode and icdcm
+phecode <- read.csv('./output_data/phecode.csv',header=TRUE)
+exclphecode <- read.csv('./output_data/exclphecode.csv',header=TRUE)
+icdcm <- read.csv('./output_data/icdcm.csv',header=TRUE)
+colnames(icdcm) = c("code","des")
+
+##cpt
+cpt <- read.csv('./output_data/cpt-HCPCS.csv',header=TRUE)
+cptcss <- read.csv('./output_data/cptcss.csv')
+
+##icd-9
+icd9pcs <- read.csv('./output_data/icd9pcs.csv',header=TRUE)
+icd9sin <- read.csv('./output_data/icd9sin.csv',header=TRUE)
+icd9mult <- read.csv('./output_data/icd9mult.csv',header=TRUE)
+
+## icd 10
+icd10pcs <- read.csv('./output_data/icd10pcs.csv',header=TRUE)
+icd10css <- read.csv('./output_data/icd10css.csv',header=TRUE)
+
+# matching
+
+## phecode
+icdcm_matching <- partial_join(icdcm, cuiterm, by_x = 'des', pattern_y = 'term',type='icdcm')
+phecode_matching <- partial_join(phecode, cuiterm, by_x = 'des', pattern_y = 'term',type='phecode')
+exclphecode_matching <- partial_join(exclphecode, cuiterm, by_x = 'des', pattern_y = 'term',type='exclphecode')
+
+## cpt
+cpt_matching <-  partial_join(cpt, cuiterm, by_x = 'des', pattern_y = 'term',type='cpt')
+cptcss_matching <- partial_join(cptcss, cuiterm, by_x = 'des', pattern_y = 'term',type='cpt_css')
+
+## icd9pcs
+icd9pcs_matching <- partial_join(icd9pcs, cuiterm, by_x = 'des', pattern_y = 'term',type='icd9pcs')
+icd9sin_matching <- partial_join(icd9sin, cuiterm, by_x = 'des', pattern_y = 'term',type='sinicd9_css')
+icd9mult_matching <- partial_join(icd9mult, cuiterm, by_x = 'des', pattern_y = 'term',type='multicd9_css')
+
+## icd10pcs
+icd10pcs_matching <- partial_join(icd10pcs, cuiterm, by_x = 'des', pattern_y = 'term',type='icd10pcs')
+icd10css_matching <- partial_join(icd10css, cuiterm, by_x = 'des', pattern_y = 'term',type='icd10_css')
+
+## as.character
+phecode_matching$code <- as.character(phecode_matching$code)
+phecode_matching$code <- as.character(phecode_matching$code)
+exclphecode_matching$code<- as.character(exclphecode_matching$code)
+icd9pcs_matching$code<- as.character(icd9pcs_matching$code)
+icd10css_matching$code<- as.character(icd10css_matching$code)
+
+## combine
+paper1_matching <- rbind(icdcm_matching,phecode_matching,exclphecode_matching,icd9pcs_matching,icd9sin_matching,icd9mult_matching,icd10pcs_matching,icd10css_matching,cptcss_matching,cpt_matching)
+setorder(paper1_matching,cui)
+paper1_matching <- distinct(paper1_matching)%>% arrange(Superior.Key.Location)
+paper1_matching$X <- NULL
+paper1_matching$Superior.Key.Semantictype <- NULL
+write.csv(paper1_matching,"./output_data/datapaper1_matching_Seven.csv",row.names = FALSE)
+```
+
+```{r}
+cuiterm$term
+cuiterm$term = paste0(" ",cuiterm$term," ")
+```

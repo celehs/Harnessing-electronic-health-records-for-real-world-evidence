@@ -1,0 +1,170 @@
+---
+title: "partial_matching"
+author: "Qingyi Zeng"
+date: "2023-01-15"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(readxl)
+library(tidyr)
+library(dplyr)
+library(stringi)
+library(stringr)
+library(plyr)
+library(dplyr)
+library(janitor)
+library(caret)
+library(ggplot2)
+library(ROCR)
+
+## cpt-HCPCS
+cpt <- read_excel('./raw_data/cpt-HCPCS.xlsx')
+colnames(cpt) <- c('code','des')
+cpt$des <- tolower(cpt$des)
+write.csv(cpt,'./output_data/cpt-HCPCS.csv',row.names = FALSE)
+
+## CSS categories for CPT
+cptcss <- read.csv('./raw_data/cptccs.csv')
+colnames(cptcss) <- c('cpt_range','code','des')
+cptcss$des <- tolower(cptcss$des)
+cptcss$cpt_range <- NULL
+write.csv(cptcss,'./output_data/cptcss.csv',row.names=FALSE)
+
+## icd-9-pcs
+icd9pcs <- read_excel('./raw_data/CMS32_DESC_LONG_SHORT_SG.xlsx')
+icd9pcs$`SHORT DESCRIPTION` <- NULL
+colnames(icd9pcs) <- c('code','des')
+icd9pcs$des <- tolower(icd9pcs$des)
+write.csv(icd9pcs,'./output_data/icd9pcs.csv',row.names=FALSE)
+
+## CSS for icd-9-pcs (multi+single)
+icd9sin <- read.csv('./raw_data/prlabel 2014.csv',header=TRUE)
+colnames(icd9sin) <- c('code','des')
+icd9sin$des <- tolower(icd9sin$des)
+write.csv(icd9sin,'./output_data/icd9sin.csv',row.names=FALSE)
+
+icd9mult <- read.csv('./raw_data/prmlabel-09.csv')
+colnames(icd9mult) <- c('code','des')
+icd9mult$des <- tolower(icd9mult$des)
+icd9mult$des <- gsub("\'", "", icd9mult$des, fixed = TRUE)
+icd9mult$code <- gsub("\'", "", icd9mult$code, fixed = TRUE)
+icd9mult$des <-trimws(icd9mult$des)
+icd9mult$code<-trimws(icd9mult$code)
+str(icd9mult)
+write.csv(icd9mult,'./output_data/icd9mult.csv',row.names=FALSE)
+
+## icd-10-pcs
+icd10pcs <- read.csv('./raw_data/ccs_pr_icd10pcs_2020_1.csv')
+icd10pcs <- icd10pcs %>% select("X.ICD.10.PCS.CODE.","X.ICD.10.PCS.CODE.DESCRIPTION.")
+colnames(icd10pcs) <- c('code','des')
+icd10pcs$des <- tolower(icd10pcs$des)
+icd10pcs$des <- gsub("\'", "", icd10pcs$des, fixed = TRUE)
+icd10pcs$code <- gsub("\'", "", icd10pcs$code, fixed = TRUE)
+icd10pcs$des <-trimws(icd10pcs$des)
+icd10pcs$code<-trimws(icd10pcs$code)
+write.csv(icd10pcs,'./output_data/icd10pcs.csv',row.names=FALSE)
+
+## CSS for icd-10-pcs
+icd10css <- read.csv('./raw_data/ccs_pr_icd10pcs_2020_1.csv')
+icd10css <- icd10css %>% select("X.MULTI.CCS.LVL.2.","X.MULTI.CCS.LVL.2.LABEL.")
+colnames(icd10css) <- c('code','des')
+icd10css$des <- tolower(icd10css$des)
+icd10css$des <- gsub("\'", "", icd10css$des, fixed = TRUE)
+icd10css$code <- gsub("\'", "", icd10css$code, fixed = TRUE)
+icd10css$des <-trimws(icd10css$des)
+icd10css$code<-trimws(icd10css$code)
+write.csv(icd10css,'./output_data/icd10css.csv',row.names=FALSE)
+
+##phecode for icd9 icd10 cm
+phecode_icd9cm <- read.csv("./raw_data/phecode_icd9_rolled.csv", header=TRUE)
+phecode_icd10cm<- read.csv("./raw_data/Phecode_map_v1_2_icd10cm_beta.csv", header=TRUE)
+dficd9 <- subset(phecode_icd9cm,select=-c(Ignore.Bool,Rollup,Leaf))
+dficd10<- subset(phecode_icd10cm,select=-c(rollup,leaf))
+names(dficd10) <- names(dficd9)
+phecode_icd<- rbind(dficd9,dficd10)
+phecode_icd$Excl..Phenotypes <- trimws(phecode_icd$Excl..Phenotypes)
+phecode <- subset(phecode_icd,select=c(PheCode,Phenotype))
+exclphecode <- subset(phecode_icd,select=c(Excl..Phecodes,Excl..Phenotypes))
+colnames(phecode) <- c("code","des")
+colnames(exclphecode) <- c("code","des")
+colnames(icdcm) <- c("code","des")
+icdcm <- subset(phecode_icd,select=c(ICD9,ICD9.String))
+write.csv(phecode,'./output_data/phecode.csv',row.names=FALSE)
+write.csv(exclphecode,'./output_data/exclphecode.csv',row.names=FALSE)
+write.csv(icdcm,'./output_data/icdcm.csv',row.names=FALSE)
+
+## RxNorm
+conso<-read.delim(file = "./raw_data/RXNCONSO.RRF",sep='|',header =F,stringsAsFactors=F,quote = "")
+rxn <- conso %>% filter(V2=='ENG',V12=='RXNORM') %>% select('V1','V15')
+colnames(rxn) <- c('code','des')
+write.csv(rxn,'./output_data/rxn.csv',row.names = FALSE)
+
+## Lonic
+lonic <- read.csv("./raw_data/LoincTableCore.csv", header=TRUE)
+lonic <-  subset(lonic,select=c(LOINC_NUM,COMPONENT))
+colnames(lonic) <- c('code','des')
+write.csv(lonic,'./output_data/lonic.csv',row.names = FALSE)
+
+
+## cui 
+cui<-read.delim(file = "./raw_data/MRCONSO.RRF", sep='|',header = F,quote="")
+cuidic <- subset(cui,V2 == 'ENG',select = c('V1','V15'))
+colnames(cuidic) <- c("cui","term")
+cuidic <- distinct(cuidic)
+write.csv(cuidic,"./output_data/cui.csv",row.names=FALSE)
+cuidic <- read.csv("./output_data/cui.csv",header=TRUE)
+```
+
+```{r}
+## paper data
+paper1 <- read.table("./raw_data/result_paper.txt",sep="|",header=TRUE)
+
+##clean data
+paper1$Key.Cui <- gsub("[][]","",paper1$Key.Cui)
+paper1$Superior.Key.Cui <- gsub("[][]","",paper1$Superior.Key.Cui)
+paper1$Key.Semantictype<-gsub("[][]","",paper1$Key.Semantictype)
+paper1$Superior.Key.Semantictype<-gsub("[][]","",paper1$Superior.Key.Semantictype)
+paper1$Key.Cui <- trimws(paper1$Key.Cui)
+paper1$Superior.Key.Cui <- trimws(paper1$Superior.Key.Cui)
+paper1$Key.Semantictype<-trimws(paper1$Key.Semantictype)
+paper1$Superior.Key.Semantictype<-trimws(paper1$Superior.Key.Semantictype)
+paper1$Key <- trimws(paper1$Key)
+paper1$Superior.Key <- trimws(paper1$Superior.Key)
+write.csv(paper1,"./output_data/paper1.csv")
+
+
+##1.parenthesis has been tackled:dipeptidyl peptidase 4 inhibitor
+
+## papercui
+papercui1 <- paper1 %>% select('Superior.Key','Superior.Key.Semantictype')
+papercui2 <- paper1 %>% select('Superior.Key','Superior.Key.Cui','Superior.Key.Location')
+papercui1<- papercui1 %>% 
+  tidyr::separate_rows(Superior.Key.Semantictype, sep = ";") 
+papercui2<- papercui2%>% 
+  tidyr::separate_rows(Superior.Key.Cui, sep = ", ") 
+
+papercui1$Superior.Key.Semantictype <- trimws(papercui1$Superior.Key.Semantictype, which = c("both"))
+papercui2$Superior.Key.Cui <- trimws(papercui2$Superior.Key.Cui, which = c("both"))
+papercui2$Superior.Key.Semantictype <- papercui1$Superior.Key.Semantictype
+papercui2 <- distinct(papercui2)
+papercui2<- papercui2%>% arrange(Superior.Key.Location)
+write.csv(papercui2,"./output_data/paper1cui.csv")
+
+## perform roc-auc results 
+seman_usf= read_xlsx("raw_data/semanroc.xlsx")
+rocterm <- papercui2 %>% filter(Superior.Key.Semantictype %in% seman_usf$seman)
+rocterm <- merge(cuidic, rocterm, by.x = "cui", by.y = "Superior.Key.Cui")
+roctest <- rocterm %>% filter(nchar(term)>4) %>% select("cui","Superior.Key","term","Superior.Key.Semantictype","Superior.Key.Location")
+
+### data clearance 
+table_cui<- rocterm
+## add end position
+for(i in nrow(table_cui))
+{
+  table_cui$Superior.Key.Location2 <- stri_length(table_cui$Superior.Key)+table_cui$Superior.Key.Location-1
+}
+table_cui <- table_cui %>% arrange(Superior.Key.Location)
+write.csv(table_cui,"./output_data/paper1term.csv")
+dim(table_cui)
+```

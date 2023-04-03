@@ -93,7 +93,7 @@ Match the identified medical concepts to both structured and unstructured EHR da
             <td><a href="https://pubmed.ncbi.nlm.nih.gov/20335276/">PheWAS: demonstrating the feasibility of a phenome-wide scan to discover gene-disease associations</a></td>
         </tr>
         <tr>
-            <td>CCS(Resource:<a href="https://hcup-us.ahrq.gov/toolssoftware/ccs/ccs.jsp">ICD9-CM</a>,<a href="https://hcup-us.ahrq.gov/toolssoftware/ccs10/ccs10.jsp">ICD-10-PCS</a>, <a href="https://hcup-us.ahrq.gov/reports/natstats/his95/clinclas.htm">Ref</a>),CPT-4/HCPCS(<a href="https://www.cms.gov/search/cms?keys=CPT&sort=&searchpage">Code</a>, ICD-9-CM(<a href="https://www.cms.gov/Medicare/Coding/ICD9ProviderDiagnosticCodes/codes">Code</a>), ICD-10-PCS(<a href="https://www.cms.gov/medicare/icd-10/2023-icd-10-pcs">Resource</a>)</td>
+            <td>CCS(Resource:<a href="https://hcup-us.ahrq.gov/toolssoftware/ccs/ccs.jsp">ICD9-CM</a>,<a href="https://hcup-us.ahrq.gov/toolssoftware/ccs10/ccs10.jsp">ICD-10-PCS</a>, <a href="https://hcup-us.ahrq.gov/reports/natstats/his95/clinclas.htm">Ref</a>),CPT-4/HCPCS(<a href="https://www.cms.gov/search/cms?keys=CPT&sort=&searchpage">Resource</a>, ICD-9-CM(<a href="https://www.cms.gov/Medicare/Coding/ICD9ProviderDiagnosticCodes/codes">Resource</a>), ICD-10-PCS(<a href="https://www.cms.gov/medicare/icd-10/2023-icd-10-pcs">Resource</a>)</td>
          <td> <a href="https://www.cms.gov/Medicare/Coding/ICD9ProviderDiagnosticCodes/codes">ICD-9-CM Diagnosis and Procedure Codes</a>,
               <a href="https://www.cms.gov/medicare/icd-10/2023-icd-10-pcs">2023 ICD-10-PCS</a>,
               <a href="https://www.cms.gov/search/cms?keys=CPT&sort=&searchpage">List of CPT/HCPCS Codes</a>,

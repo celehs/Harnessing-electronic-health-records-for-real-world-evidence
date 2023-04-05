@@ -134,10 +134,7 @@ LOINC, a universal standard for identifying laboratory observations: a 5-year up
             <a href="https://github.com/GanjinZero/CODER">APP</a>, 
             <a href="https://aclanthology.org/2022.bionlp-1.8/">REF</a>)
             </td>
-            <td><a href="https://www.medrxiv.org/content/10.1101/2021.03.13.21253486v1
-">
-Clinical Knowledge Extraction via Sparse Embedding Regression (KESER) with Multi-Center Large Scale Electronic Health Record Data. 
-</a></td>
+            <td></td>
         </tr>
         <tr>
             <td>Embedding from Co-occurrence in EHRs</td>

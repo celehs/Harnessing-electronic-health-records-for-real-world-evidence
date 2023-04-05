@@ -126,11 +126,26 @@ LOINC, a universal standard for identifying laboratory observations: a 5-year up
             <td>Knowledge sources</td>
          <td> <a href="https://bio.nlplab.org/pdf/pyysalo13literature.pdf">Distributional Semantics Resources </a>, <a href="https://pubmed.ncbi.nlm.nih.gov/"> PubMed </a>,  <a href="https://www.merckmanuals.com/">MerkMannual
 </a>,  <a href="https://www.medscape.com/">Medscape</a></td> <td><a href="https://pubmed.ncbi.nlm.nih.gov/25160253/">Exploring the application of deep learning techniques on medical text corpora</a>,<a href="https://pubmed.ncbi.nlm.nih.gov/25160253/">Exploring the application of deep learning techniques on medical text corpora</a> </td>
-        </tr>   
+        </tr>
         <tr>
-            <td>EHR data</td>
-            <td><a href="https://www.data.va.gov/dataset/Corporate-Data-Warehouse-CDW-/ftpi-epf7?category=dataset&view_name=Corporate-Data-Warehouse-CDW-">VA Corporate Data Warehouse (CDW)</a>,<a href="https://www.massgeneralbrigham.org/en
-">Mass General Brigham (MGB)</a> </td>
+            <td>Matching descriptions via language model</td>
+            <td>
+            CODER++(
+            <a href="https://github.com/GanjinZero/CODER">APP</a>, 
+            <a href="https://aclanthology.org/2022.bionlp-1.8/">REF</a>)
+            </td>
+            <td><a href="https://www.medrxiv.org/content/10.1101/2021.03.13.21253486v1
+">
+Clinical Knowledge Extraction via Sparse Embedding Regression (KESER) with Multi-Center Large Scale Electronic Health Record Data. 
+</a></td>
+        </tr>
+        <tr>
+            <td>Embedding from Co-occurrence in EHRs</td>
+            <td>
+            KESER(
+            <a href="https://dev.parse-health.org/shiny/ARCH/">APP</a>, 
+            <a href="https://www.medrxiv.org/content/10.1101/2021.03.13.21253486v1">REF</a>)
+            </td>
             <td><a href="https://www.medrxiv.org/content/10.1101/2021.03.13.21253486v1
 ">
 Clinical Knowledge Extraction via Sparse Embedding Regression (KESER) with Multi-Center Large Scale Electronic Health Record Data. 

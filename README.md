@@ -131,7 +131,7 @@ LOINC, a universal standard for identifying laboratory observations: a 5-year up
             <td>Matching descriptions via language model</td>
             <td>
             CODER++(
-            <a href="https://github.com/GanjinZero/CODER">APP</a>, 
+            <a href="https://github.com/GanjinZero/CODER">CODE</a>, 
             <a href="https://aclanthology.org/2022.bionlp-1.8/">REF</a>)
             </td>
             <td></td>

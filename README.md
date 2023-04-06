@@ -139,7 +139,7 @@ LOINC, a universal standard for identifying laboratory observations: a 5-year up
         <tr>
             <td>Embedding from Co-occurrence in EHRs</td>
             <td>
-            KESER(
+            KESER(<a href="https://github.com/celehs">CODE</a>, 
             <a href="https://dev.parse-health.org/shiny/ARCH/">APP</a>, 
             <a href="https://www.medrxiv.org/content/10.1101/2021.03.13.21253486v1">REF</a>)
             </td>

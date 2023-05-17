@@ -1,0 +1,304 @@
+branch | branch
+branches | branch
+branch vessel| branch
+branche vessels| branch
+Main pulmonary artery | mainpa
+Main pulmonary arteries | mainpa
+central pulmonary artery | mainpa
+central pulmonary arteries | mainpa
+both main pulmonary arteries | mainpa
+bilateral main pulmonary arteries | mainpa
+right pulmonary artery | mainpa
+right pulmonary arteries | mainpa
+right main pulmonary artery | mainpa
+right main pulmonary arteries | mainpa
+main right pulmonary artery | mainpa
+main right pulmonary arteries | mainpa
+right distal main pulmonary artery | mainpa
+right distal main pulmonary arteries | mainpa
+distal right main pulmonary artery | mainpa
+distal right main pulmonary arteries | mainpa
+distal right pulmonary artery | mainpa
+distal right pulmonary arteries | mainpa
+left pulmonary artery  | mainpa
+left pulmonary arteries  | mainpa
+left main pulmonary artery | mainpa
+left main pulmonary arteries | mainpa
+main left pulmonary artery | mainpa
+main left pulmonary arteries | mainpa
+distal left main pulmonary artery | mainpa
+distal left main pulmonary arteries | mainpa
+distal left pulmonary artery | mainpa
+distal left pulmonary arteries | mainpa
+left distal main pulmonary artery | mainpa
+left distal main pulmonary arteries | mainpa
+distal pulmonary artery | mainpa
+distal pulmonary arteries | mainpa
+distal main pulmonary artery | mainpa
+distal main pulmonary arteries | mainpa
+Interlobar descending branch | lobarpa
+Interlobar descending branches | lobarpa
+Interlobar descending pulmonary artery | lobarpa
+Interlobar descending pulmonary arteries | lobarpa
+Interlobar pulmonary artery | lobarpa
+Interlobar pulmonary arteries | lobarpa
+interlobar artery | lobarpa
+interlobar arteries | lobarpa
+right interlobar pulmonary artery | lobarpa
+right interlobar pulmonary arteries | lobarpa
+right interlobar artery | lobarpa
+right interlobar arteries | lobarpa
+right descending pulmonary artery | lobarpa
+right descending pulmonary arteries | lobarpa
+descending right pulmonary artery | lobarpa
+descending right pulmonary arteries | lobarpa
+left descending pulmonary artery | lobarpa
+left descending pulmonary arteries | lobarpa
+descending left pulmonary artery | lobarpa
+descending left pulmonary arteries | lobarpa
+left interlobar descending pulmonary artery | lobarpa
+left interlobar descending pulmonary arteries | lobarpa
+left interlobar descending artery | lobarpa
+left interlobar descending arteries | lobarpa
+left interlobar pulmonary artery | lobarpa
+left interlobar pulmonary arteries | lobarpa
+left interlobar artery | lobarpa
+left interlobar arteries | lobarpa
+lobe pulmonary artery | lobarpa
+lobe pulmonary arteries | lobarpa
+lobar artery | lobarpa
+lobar arteries | lobarpa
+lobar pulmonary artery | lobarpa
+lobar pulmonary arteries | lobarpa
+lobe artery | lobarpa
+lobe arteries | lobarpa
+lobe vessel | lobarpa
+lobe vessels | lobarpa
+lobar vessel | lobarpa
+lobar vessels | lobarpa
+lobe branches | lobarpa
+first order pulmonary artery branch | lobarpa
+interlobar descending branch bifurcations | lobarpa
+lobar branch | lobarpa
+lobar branches | lobarpa
+lobar division | lobarpa
+lobar divisions | lobarpa
+lingular artery | lobarpa
+lingular arteries | lobarpa
+lingular pulmonary artery | lobarpa
+lingular pulmonary arteries | lobarpa
+lingular branch | lobarpa
+lingular branches | lobarpa
+panlobar | lobarpa
+interlobar artery branch | lobarpa
+interlobar artery branches | lobarpa
+interlobar arterial branch | lobarpa
+interlobar arterial branches | lobarpa
+interlobar branch | lobarpa
+interlobar branches | lobarpa
+lobe artery branch | segmentalpa
+lobe artery branches | segmentalpa
+second order pulmonary artery branch | segmentalpa
+second order pulmonary artery branches | segmentalpa
+lobe artery branch | segmentalpa
+lobe artery branches | segmentalpa
+segmental branch | segmentalpa
+segmental branches | segmentalpa
+segmental artery | segmentalpa
+segmental arteries | segmentalpa
+segmental vessel | segmentalpa
+segmental vessels | segmentalpa
+segmental pulmonary artery | segmentalpa
+segmental pulmonary arteries | segmentalpa
+lobe pulmonary artery branches | segmentalpa
+segment branch | segmentalpa
+segment branches | segmentalpa
+segmental division | segmentalpa
+segmental divisions | segmentalpa
+segmental branch | segmentalpa
+segmental branches | segmentalpa
+segmental arterial branch | segmentalpa
+segmental arterial branches | segmentalpa
+segmental artery branch | segmentalpa
+segmental artery branches | segmentalpa
+subsegmental pulmonary artery | subsegmentalpa
+subsegmental pulmonary arteries | subsegmentalpa
+subsegmental branch vessel | subsegmentalpa
+subsegmental branch vessels | subsegmentalpa
+subsegmental branch | subsegmentalpa
+subsegmental branches | subsegmentalpa
+subsegmental artery | subsegmentalpa
+subsegmental arteries | subsegmentalpa
+subsegmental vessel | subsegmentalpa
+subsegmental vessels | subsegmentalpa
+subsegmental division | subsegmentalpa
+subsegmental divisions | subsegmentalpa
+
+all the segmental branches | segmentalpa
+all segmental branches | segmentalpa
+all the lobar pulmonary arteries | lobarpa
+
+
+right lung | lung
+right lungs | lung
+Right sided | site
+Right-sided | site
+right | site
+right arterial system | lung
+right arterial systems | lung
+right pulmonary arterial trees | lung
+right pulmonary arterial tree | lung
+right pulmonary arterial systems | lung
+right pulmonary arterial system | lung
+right sided pulmonary arteries | lung
+left lungs | lung
+left lung | lung
+Left sided | site
+Left-sided | site
+left | site
+left arterial systems | lung
+left arterial system | lung
+left pulmonary arterial trees | lung
+left pulmonary arterial tree | lung
+left pulmonary arterial systems | lung
+left pulmonary arterial system | lung
+left sided pulmonary arteries | lung
+both lungs | lung
+lobes | lobe
+lobe | lobe
+all lobes | lobe
+all bilateral lung lobes | lobe
+left upper lobe | lobe
+left upper lobes | lobe
+lul | lobe
+left upper | lobe
+Left lower lobe  | lobe
+Left lower lobes  | lobe
+lll | lobe
+left lower | lobe
+Lingula | lobe
+lingular | lobe
+lingular portion of the left upper lobe | lobe
+right upper lobe | lobe
+right upper lobes | lobe
+rul | lobe
+right upper | lobe
+Right middle lobe | lobe
+Right middle lobes | lobe
+rml | lobe
+right middle | lobe
+Right lower lobe | lobe
+Right lower lobes | lobe
+rll | lobe
+right lower | lobe
+the upper lobes | lobe
+both upper lobes | lobe
+both the upper lobes | lobe
+bilateral upper | lobe
+bilateral upper lobe | lobe
+bilateral upper lobes | lobe
+the lower lobes | lobe
+both lower lobes | lobe
+bilateral lower | lobe
+bilateral lower lobes | lobe
+both the lower lobes | lobe
+segment | segment
+segments | segment
+Apicoposterior segment | segment
+Apicoposterior segments | segment
+apicoposterior | segment
+apical posterior | segment
+Apical segments | segment
+Apical segment | segment
+apical | segment
+posterior segments | segment
+posterior segment | segment
+posterior | segment
+Anterior segments | segment
+Anterior segment | segment
+anterior | segment
+inferior lingular | segment
+inferior segments | segment
+inferior segment | segment
+Superior lingular | segment
+Medial segments | segment
+Medial segment | segment
+medial | segment
+Lateral segments | segment
+Lateral segment | segment
+lateral | segment
+Superior segments | segment
+Superior segment | segment
+superior | segment
+Medial basal | segment
+Medial basal segment | segment
+Medial basal segments | segment
+medial basilar | segment
+medial basilar segments | segment
+medial basilar segment | segment
+mediobasal | segment
+mediobasal segments | segment
+mediobasal segment | segment
+mediobasilar segments | segment
+mediobasilar segment | segment
+mediobasilar | segment
+posterior basal  | segment
+posterior basal segments  | segment
+posterior basal segment  | segment
+Posterobasal | segment
+Posterobasal segments | segment
+Posterobasal segment | segment
+posterior basilar | segment
+posterior basilar segments | segment
+posterior basilar segment | segment
+posterobasilar | segment
+posterobasilar segments | segment
+posterobasilar segment | segment
+lateral basal | segment
+lateral basal segments | segment
+lateral basal segment | segment
+lateral basilar segments | segment
+lateral basilar segment | segment
+lateral basilar | segment
+laterobasal | segment
+laterobasal segments | segment
+laterobasal segment | segment
+laterobasilar | segment
+laterobasilar segments | segment
+laterobasilar segment | segment
+Anterior basal | segment
+Anterior basal segments | segment
+Anterior basal segment | segment
+Anterior basilar | segment
+Anterior basilar segments | segment
+Anterior basilar segment | segment
+anterobasal | segment
+anterobasal segments | segment
+anterobasal segment | segment
+anterobasilar | segment
+anterobasilar segments | segment
+anterobasilar segment | segment
+Anteromedial basal | segment
+Anteromedial basal segments | segment
+Anteromedial basal segment | segment
+anteromedial basilar | segment
+anteromedial basilar segments | segment
+anteromedial basilar segment | segment
+Basal segments | segment
+lung base | segment
+lung bases | segment
+base | segment
+bases | segment
+basilar | segment
+all segments | segment
+pulmonary artery | artery
+pulmonary arteries | artery
+artery | artery
+arteries | artery
+vessel | artery
+vessels | artery
+pulmonary arterial vessel | artery
+pulmonary arterial vessels | artery
+pulmonary arterial tree | lung
+pulmonary arterial trees | lung
+both pulmonary arterial trees | lung

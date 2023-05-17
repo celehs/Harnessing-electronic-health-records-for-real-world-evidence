@@ -1,0 +1,50 @@
+acute | acute
+acute to subacute | acute
+subacute to acute | acute
+inacute | acute-
+non acute | acute-
+non-acute | acute-
+not acute | acute-
+nonacute | acute-
+acute on chronic | acu_chr
+subacute | subacute
+sub-acute | subacute
+subacute to chronic | subacute
+chronic to subacute | subacute
+chronic | chronic
+chronicity | chronic
+interval resolution of | interval
+partial resolution of | interval
+non chronic | chronic-
+non-chronic | chronic-
+unchronic | chronic-
+new | new
+unchanged | interval
+other | other
+additional | other
+multiple | multiple
+numerous | multiple
+several | multiple
+Saddle | central
+main | central
+//central | central
+segmental | segmental
+subsegmental | subsegmental
+sub segmental | subsegmental
+lobar | lobar
+peripheral | peripheral
+previous | previous
+previously | previous
+history of | previous
+known | previous
+prior | previous
+bilateral | bilateral
+concern for | concern
+small
+extensive
+large
+tiny
+nonocclusive
+nonoccluding
+non-occlusive
+non-occluding
